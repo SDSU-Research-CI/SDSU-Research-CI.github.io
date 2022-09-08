@@ -1,4 +1,5 @@
 # Create a Jekyll container from Ruby Alpine image
+# GitHub Pages Dependencies: https://pages.github.com/versions/
 
 # At a miniumum use Ruby 2.5 or later
 FROM ruby:2.7.6-alpine3.16

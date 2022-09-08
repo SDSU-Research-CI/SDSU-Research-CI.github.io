@@ -1,2 +1,9 @@
 # SDSU-Research-CI.github.io
-Public website
+
+## Run the website from within the container:
+
+```
+# bundle install
+# bundle update
+# bundle exec jekyll server --livereload
+```
