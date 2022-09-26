@@ -70,13 +70,14 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2022.3)
+    tzinfo-data (1.2022.4)
       tzinfo (>= 1.0.0)
     wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
   aarch64-linux-musl
+  x86_64-linux-musl
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
