@@ -18,14 +18,14 @@ The instructional cluster is also available during nonpeak times for specific ap
 
 ![Tech Logo](/images/instructionalcluster/tech-logos.png)
 
-## Jupyter Lab/Notebooks
+## JupyterHub
 
-Jupyter Lab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. Languages such as Python, R, and Julia are available along with Pandas, PyTorch, and TensorFlow libraries.
+JupyterHub is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. Languages such as Python, R, and Julia are available along with Pandas, PyTorch, and TensorFlow libraries.
 
 [Launch JupyterHub](https://sdsu-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
 
 ## Batch / Long Running Jobs
 
-While the primary interface to the instructional cluster is Jupyter Lab, more complex jobs can be created and run as software containers. Our ![Software Factory](/softwarefactory) is available to assist faculty and researchers with software containerization. Requests for consultation can be made by ServiceNow.
+While the primary interface to the instructional cluster is JupyterHub, more complex jobs can be created and run as software containers. Our [Software Factory](/softwarefactory) is available to assist faculty and researchers with software containerization. Requests for consultation can be made by [ServiceNow](https://sdsu.service-now.com/sp).
 
 _The instructional cluster is operated by the Research & Cyberinfrastructure group within the IT Division._

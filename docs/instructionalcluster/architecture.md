@@ -2,7 +2,7 @@
 layout: default
 title: Architecture Details
 parent: Instructional Cluster
-nav_order: 4
+nav_order: 6
 has_children: false
 description: ""
 permalink: /instructionalcluster/architecture
@@ -16,11 +16,11 @@ The instructional cluster is part of the [National Research Platform](https://na
 
 SDSU hosts 15 Dell PowerEdge servers dedicated to the instructional cluster.
 
-| Node Type    | Qty. | Specifications |
-|:-------------|:-----|:------|
-| GPU          | 8    | PowerEdge R750XA<br />(2x) Intel Xeon Gold 6338 2G CPU, 32C/64T<br/>(4x) Nvidia A100 GPU, 80 GB RAM<br/>512 GB System RAM |
-| CPU          | 4    | PowerEdge R750<br/>(2x) Intel Xeon Gold 6338 2G CPU, 32C/64T<br/>512 GB System RAM |
-| Storage      | 3    | PowerEdge R750<br/>(2x) Intel Xeon Gold 6336Y 2.4G, 24C/48T<br/>160 TB Storage<br/>256 GB System RAM |
+| Node Type    | Quantity | Specifications |
+|:-------------|:---------|:------|
+| GPU          | 8        | PowerEdge R750XA<br />(2x) Intel Xeon Gold 6338 2G CPU, 32C/64T<br/>(4x) Nvidia A100 GPU, 80 GB RAM<br/>512 GB System RAM |
+| CPU          | 4        | PowerEdge R750<br/>(2x) Intel Xeon Gold 6338 2G CPU, 32C/64T<br/>512 GB System RAM |
+| Storage      | 3        | PowerEdge R750<br/>(2x) Intel Xeon Gold 6336Y 2.4G, 24C/48T<br/>160 TB Storage<br/>256 GB System RAM |
 
 ![Server Rack](/images/instructionalcluster/serverrack.png)
 

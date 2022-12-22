@@ -127,7 +127,7 @@ callouts:
   note:
     title: Note
     color: blue
-  note:
+  new:
     title: New
     color: green
 
