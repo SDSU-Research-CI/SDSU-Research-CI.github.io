@@ -118,6 +118,19 @@ kramdown:
     block:
       line_numbers: false
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+  highlight:
+    color: yellow
+  note:
+    title: Note
+    color: blue
+  note:
+    title: New
+    color: green
+
 compress_html:
   clippings: all
   comments: all
