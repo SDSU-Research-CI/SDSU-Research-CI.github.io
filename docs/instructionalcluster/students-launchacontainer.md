@@ -10,4 +10,5 @@ permalink: /instructionalcluster/students/launchcontainer
 
 # Launch a Container
 
-After [logging in](/instructionalcluster/students/loggingin) to JupyterHub you must launch a container in order to begin using JupyterHub.
+After [logging in](/instructionalcluster/students/loggingin) to JupyterHub you must launch a container in order to begin using JupyterHub by selectin an appropriate image. Your instructor will provide the correct container image to use for the course.
+
