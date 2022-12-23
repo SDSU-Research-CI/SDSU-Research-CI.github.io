@@ -28,4 +28,4 @@ JupyterHub is the latest web-based interactive development environment for noteb
 
 While the primary interface to the instructional cluster is JupyterHub, more complex jobs can be created and run as software containers. Our [Software Factory](/softwarefactory) is available to assist faculty and researchers with software containerization. Requests for consultation can be made by [ServiceNow](https://sdsu.service-now.com/sp).
 
-_The instructional cluster is operated by the Research & Cyberinfrastructure group within the IT Division._
+*The instructional cluster is operated by the Research & Cyberinfrastructure group within the IT Division.*
