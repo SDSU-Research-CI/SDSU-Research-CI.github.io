@@ -10,11 +10,11 @@ permalink: /instructionalcluster/architecture
 
 # Architecture
 
-The instructional cluster is part of the [National Research Platform](https://nationalresearchplatform.org/) Nautilus is a distributed Kubernetes-based compute environment supporting CPU and GPU workloads. SDSU invested in hardware to support instructional use-cases and host the hardware in its campus data center. The resources are giving first priority to instructional use and then made available to other users of Nautilus.
+The instructional cluster is part of the [National Research Platform](https://nationalresearchplatform.org/) Nautilus platform, a distributed Kubernetes-based compute environment supporting CPU and GPU workloads. SDSU invested in hardware to support instructional use-cases and hosts the hardware in its campus data center. The resources are given first priority to instructional use and then made available to other users of Nautilus.
 
 ## Compute
 
-SDSU hosts 15 Dell PowerEdge servers dedicated to the instructional cluster.
+SDSU hosts 15 Dell PowerEdge servers supporting the instructional cluster.
 
 | Node Type    | Quantity | Specifications |
 |:-------------|:---------|:------|
@@ -26,7 +26,7 @@ SDSU hosts 15 Dell PowerEdge servers dedicated to the instructional cluster.
 
 ## Storage
 
-Each user of the instructional cluster is provided 5GB of storage spaced accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on our three storage nodes.
+Each user of the instructional cluster is provided 5GB of storage spaced accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes.
 
 ## Networking
 

@@ -19,7 +19,7 @@ JupyterHub is available using a web browser and your SDSUid to authenticate. Onl
 1. Select **San Diego State University** from the drop down and check the **Remember this selection** checkbox.
 ![CILogon Prompt](/images/instructionalcluster/cilogon.png)
 1. Click **Log On**
-1. Next you will be redirected to SDSU's Shibboleth system. Provide your SDSU credentials and click **Login**.
+1. Next, you will be redirected to SDSU's Shibboleth system. Provide your SDSUid credentials and click **Login**.
 ![Shibboleth Prompt](/images/instructionalcluster/cilogon2.png)
 1. When prompted, completed the Duo/MFA authentication request.
 ![Duo Prompt](/images/instructionalcluster/cilogon3.png)
