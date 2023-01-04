@@ -26,12 +26,14 @@ The following general purpose containers are available for use.
 | Stack Tensorflow      | [tensorflow-notebook](https://gitlab.nrp-nautilus.io/prp/jupyter-stack/-/tree/prp/tensorflow-notebook) | (everything in scipy-notebook)<br/>[tensorflow](https://www.tensorflow.org/) 2.10.0 machine learning library |
 | Stack Datascience     | [datascience-notebook](https://gitlab.nrp-nautilus.io/prp/jupyter-stack/-/tree/prp/datascience-notebook) | (everything in tensorflow-notebook)<br/>[rpy2](https://rpy2.github.io/doc/latest/html/index.html) package<br/>The [Julia](https://julialang.org/) 1.7.2 compiler and base environment<br/>IJulia to support Julia code in Jupyter notebooks<br/>[HDF5](https://github.com/JuliaIO/HDF5.jl), [Gadfly](https://gadflyjl.org/stable/), [RDatasets](https://github.com/JuliaStats/RDatasets.jl) packages |
 | Stack PRP             | [prp-notebook](https://gitlab.nrp-nautilus.io/prp/jupyter-stack/-/tree/prp/prp-notebook) | (everything in tensorflow-notebook)<br/>[astropy](https://pypi.org/project/astropy/), [bowtie](https://pypi.org/project/bowtie/), [fastai](https://pypi.org/project/fastai/), [keras](https://pypi.org/project/keras/), [nbgitpuller](https://pypi.org/project/nbgitpuller/), [opencv-python](https://pypi.org/project/opencv-python/), [psycopg2-binary](https://pypi.org/project/psycopg2-binary/), [tensorflow-probability](https://pypi.org/project/tensorflow-probability/), [torch](https://pypi.org/project/torch/) 1.12.1, [torchvision](https://pypi.org/project/torchvision/), [visualdl](https://pypi.org/project/visualdl/), [CommPy](https://github.com/veeresht/CommPy) packages |
+| R Studio              | [r-studio](https://gitlab.nrp-nautilus.io/prp/jupyter-stack/-/tree/prp/r-studio-notebook) | (everything in minimal-notebook)<br/> |
 
 The following diagram shows the relationship of the above container images.
 
 ```mermaid
 graph LR;
     A[minimum-notebook]-->B[r-notebook];
+    A-->G[r-studio];
     A-->C[scipy-notebook]-->D[tensorflow-notebook]-->E[datascience-notebook];
     D-->F[prp-notebook];
 ```
