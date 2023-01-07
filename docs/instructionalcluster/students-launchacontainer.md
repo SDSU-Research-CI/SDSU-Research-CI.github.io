@@ -18,7 +18,7 @@ Depending on your needs, you may need to adjust values for GPU, CPU Cores, Memor
 
 | Option               | Description               |
 |:---------------------|:--------------------------|
-| GPU                  | The Instructional Cluster has both CPU and GPU (graphical processing unit) nodes. The GPU nodes contain NVIDIA A100 GPUs. These can be used for specialized tasks that are not possible with stricyl CPU nodes. Your instructor will let you know if you require GPUs. |
+| GPU                  | The Instructional Cluster has both CPU and GPU (graphical processing unit) nodes. The GPU nodes contain NVIDIA A100 GPUs. These can be used for specialized tasks that are not possible with strictly CPU nodes. Your instructor will let you know if you require GPUs. |
 | CPU Cores            | Number of CPU cores assigned to your container. |
 | Memory               | Gigabytes (GB) of memory assigned to your container.
 
