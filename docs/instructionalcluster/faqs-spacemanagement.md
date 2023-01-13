@@ -10,9 +10,9 @@ permalink: /instructionalcluster/faqs/spacemanagement
 
 # Disk Space Management
 
-Each user is granted to 5 GB (gigabyte) of storage space accessible in JupyterHub. This space is shared by all container images you launch, and across each course you may be using JupyterHub. You can check your [disk usage](/instructionalcluster/faqs/diskquota) to get an idea of how much free space you have available.
+Each user is granted 5 GB (gigabyte) of storage space accessible in JupyterHub. This space is shared by all container images you launch, and across each course you may be using JupyterHub. You can check your [disk usage](/instructionalcluster/faqs/diskquota) to get an idea of how much free space you have available.
 
-All files will be removed at the end of following semester after your last active course. For access not associated with a course, the files will be removed when your SDSUid is deprovisioned.
+All files will be removed at the end of the following semester after your last active course. For access not associated with a course, the files will be removed when your SDSUid is deprovisioned.
 
 ## Upload/Download Files
 
@@ -40,7 +40,7 @@ You can not download directories. If you wish to download a directory, consider 
 Advanced
 {: .label .label-yellow }
 
-If you have a need to backup all the files in your home directory. You can use the zip command to create a zip archive which can be downloaded.
+If you have a need to backup all the files in your home directory, then you can use the zip command to create a zip archive which can be downloaded.
 
 {: .note }
 This requires sufficient space as the zip archive will be counted as part of your quota.

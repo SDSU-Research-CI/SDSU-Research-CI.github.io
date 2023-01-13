@@ -14,7 +14,7 @@ After [logging in](/instructionalcluster/students/loggingin) to JupyterHub you m
 
 ![Container Prompt](/images/instructionalcluster/cilogon4.png)
 
-Depending on your needs, you may need to adjust values for GPU, CPU Cores, Memory, and Image. Your instructor should provide you with the necessary settings - if not, the detaults can be used.
+Depending on your needs, you may need to adjust values for GPU, CPU Cores, Memory, and Image. Your instructor should provide you with the necessary settings - if not, the defaults can be used.
 
 | Option               | Description               |
 |:---------------------|:--------------------------|

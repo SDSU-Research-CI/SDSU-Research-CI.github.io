@@ -10,7 +10,7 @@ permalink: /instructionalcluster/faqs/diskquota
 
 # Check Disk Quota
 
-Each user is provided 5 GB (gigabytes) of storage accessible from within JupyterHub. This storage is provisioned the first time you access JupyterHub and will be deleted one semester after your last active course. If you wish to retain your data, it's highly recommended that you make regular [backups](/instructionalcluster/faqs/backup).
+Each user is provided 5 GB (gigabytes) of storage accessible from within JupyterHub. This storage is provisioned the first time you access JupyterHub and will be deleted one semester after your last active course. If you wish to retain your data, it's highly recommended that you make regular [backups](/instructionalcluster/faqs/spacemanagement#back-up-to-a-zip-archive).
 
 To check how much of your 5 GB you are consuming:
 
