@@ -2,9 +2,9 @@
 
 This repo contains the Research & Cyberinfrastructure documentation site: https://sdsu-research-ci.github.io/. The repo contains a dockerfile that uses a [pre-built Jekyll container](https://github.com/SDSU-Research-CI/jekyll/pkgs/container/jekyll) to allow editing and testing locally before publishing to GitHub pages.
 
-This repo is set up to edit in Visual Studio Code.
+This repo is set up to edit in Visual Studio Code using the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 
-The firt time the container is run on your comptuer, run the following:
+The first time the container is run on your comptuer, run the following:
  
 ```
 # bundle install
