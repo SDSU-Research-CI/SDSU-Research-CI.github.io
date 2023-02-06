@@ -22,7 +22,7 @@ Depending on your needs, you may need to adjust values for GPU, CPU Cores, Memor
 | CPU Cores            | Number of CPU cores assigned to your container. |
 | Memory               | Gigabytes (GB) of memory assigned to your container.
 
-Next, select an appropraite [container image](/instructionalcluster/images) that contains the required software. Your instructor will inform you which image to use. 
+Next, select an appropriate [container image](/instructionalcluster/images) that contains the required software. Your instructor will inform you which image to use. 
 
 Finally, click **Start** to launch your container. You will receive a progress bar and progress messages as your container is created. It can take several minutes for some images to launch. 
 
