@@ -14,7 +14,7 @@ permalink: /instructionalcluster/usage
 
 | Course | Class | Use | Semester | Instructor |
 |:-------|:------|:----|:---------|:-----------|
-| COMPE 361 Windows Programming    | 10991 | Utilizing the [**Stack Scipy**](/instructionalcluster/images) container image on the instructional cluster, students solve EE problems using Matplotlib, NumPy, HDF5, and the IEEE 745 Standard. Additionally, students solve linear equations, perform regression, interpolation, eigendecomposition, numerical quadrature, fast Fourier transforms, and solve ODEs within the container. | Spring 2023 | Paolini |
+| COMPE 361 Advanced Programming   | 10991 | Utilizing the [**Stack Scipy**](/instructionalcluster/images) container image on the instructional cluster, students solve EE problems using Matplotlib, NumPy, HDF5, and the IEEE 745 Standard. Additionally, students solve linear equations, perform regression, interpolation, eigendecomposition, numerical quadrature, fast Fourier transforms, and solve ODEs within the container. | Spring 2023 | Paolini |
 | ASTR 350 Astronomical Techniques | 13057 | ... | Spring 2023 | Quimby |
 
 ## Previous Classes
