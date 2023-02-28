@@ -24,7 +24,7 @@ permalink: /instructionalcluster/usage
 ## Active Research Projects
 
 | Project Name | Researcher | Use |
-|:-------------|:--------|:----|
-| ... | ... | ... |
+|:-------------|:-----------|:----|
+| Multimodal Synthetic Data Generation | Stephanie Zarrouk | The Jupyterhub GPU cluster is aiding research on multimodal synthetic data generation using the ImageTextGen (ITG) framework, integrating GANs and transformers. ITG generates unbiased synthetic medical data with correlated image and text data types, facilitating precise and responsible training and validation of data-driven models. |
 
 ## Previous Research Projects
