@@ -2,7 +2,7 @@
 layout: default
 title: Usage
 parent: Instructional Cluster
-nav_order: 7
+nav_order: 8
 has_children: false
 description: ""
 permalink: /instructionalcluster/usage
