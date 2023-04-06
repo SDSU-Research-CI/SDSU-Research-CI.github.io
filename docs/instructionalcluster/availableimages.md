@@ -2,7 +2,7 @@
 layout: default
 title: Available Container Images
 parent: Instructional Cluster
-nav_order: 5
+nav_order: 6
 has_children: false
 description: ""
 permalink: /instructionalcluster/images
