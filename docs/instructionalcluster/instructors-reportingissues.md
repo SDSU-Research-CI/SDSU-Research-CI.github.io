@@ -13,7 +13,7 @@ First and last name, SDSUid (i.e. aztec@sdsu.edu), and ask the student to take t
 --->
 # ServiceNow Requests
 To submit a ServiceNow request for issues related to the Instructional Cluster, please follow the link to SDSU's <a href="https://sdsu.service-now.com/sp" target="_blank">ServiceNow portal</a>, click on **Report a Problem**, and provide a detailed description that includes the keyword *Instructional Cluster* within the description field.<br><br>
-<a href="" target="_blank"></a>
+
 Always provide a relevant screenshot of the issue when possible ([example](#screenshot-ex)).<br><br>
 
 ![Report a Problem](/images/instructionalcluster/instructors-reportingissues2.png)<br><br>
