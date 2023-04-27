@@ -58,3 +58,19 @@ This requires sufficient space as the zip archive will be counted as part of you
 ```
 1. Once complete, you will find a *backup.zip* file in the **File Manager** that can be downloaded.
 ![File Manager Download](/images/instructionalcluster/faq-space5.png)
+
+## Uploading and Unzipping a Zip Archive File
+
+To upload the zip archive file to JupyterLab and extract its contents, you can do so using the file browser and the terminal.
+
+1. Click on the "Upload" button in the JupyterHub File Manager on the left-hand side of the screen
+![Upload File](/images/instructionalcluster/faq-space3.png)
+1. Select the zip archive file you want to upload and click "Open" (This may take some time depending on the file size)
+1. In the terminal, navigate to the directory where you want to extract the files. You can use the cd command to change to the desired directory. For example: 
+```
+  $ cd /path/to/DesiredDirectory
+```
+1. Once you are in the desired directory, run the following command to extract the contents of the zip archive file to the current directory: 
+```
+  $ unzip /path/to/zip/backup.zip
+```
