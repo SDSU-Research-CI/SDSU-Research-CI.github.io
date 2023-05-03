@@ -3,7 +3,7 @@ layout: default
 title: Accessing Eclipse on JupyterHub
 parent: How-To Videos
 grand_parent: Instructional Cluster
-nav_order: 1
+nav_order: 2
 description: ""
 permalink: /instructionalcluster/videos/eclipse
 ---
