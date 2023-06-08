@@ -53,8 +53,10 @@ Congratulations! You now have an NRP account and you're one step closer to runni
         - ![kube config file](/images/softwarefactory/gettingaccess13.png)
     - Open your terminal and run the following command:
         - `mkdir ~/.kube`
-    - Copy your config file into the ~/.kube folder (replace the path to the config file)
-        - `cp /path/to/config ~/.kube/config`
+    - Copy your config file into the ~/.kube folder (replace the path below for your config file):
+        - `cp ~/Downloads/config ~/.kube/config`
+    - Check to make sure your config file copied successfully:
+        - `ls ~/.kube`
 
 ## Requesting Access to a Namespace
 Now that you have signed into the NRP Portal, the Research and Cyberinfrastructure team can add you to a namespace which will allow you to run containers on the Instructional Cluster.
