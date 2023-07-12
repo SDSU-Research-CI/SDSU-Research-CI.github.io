@@ -10,7 +10,6 @@ permalink: /softwarefactory/gettingaccess
 # Getting Access
 In order to run containers on the Instructional Cluster, you will need an account with the National Research Platform and you will need to be added to a namespace. A namespace allows its members to share access to containers, enabling collaboration.
 
-## TL;DR
 In addition to the written directions below, we've recorded a video walkthrough for [getting an account and requesting access to a namespace](https://mediasite.sdsu.edu/Mediasite/Play/8e7f235bc56f44fdb4586cffe1e477a71d).
 
 ## Creating a National Research Platform Portal Account
