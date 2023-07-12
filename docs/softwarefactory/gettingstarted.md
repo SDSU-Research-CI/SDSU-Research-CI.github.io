@@ -12,10 +12,10 @@ This documentation will guide you through your first steps to running containers
 
 ## Learning Outcomes
 After reading and following this documentation you should be able to:
-- Understand containers and kubernetes at a high-level
-- Start a Jupyter Notebook with the [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image
-- Configure your Kube Notebook to be able to interact with the Instructional Cluster
-- Launch a containerized job on the Instructional Cluster
+- [Understand containers and kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes)
+- [Start a Jupyter Notebook with the Kube Notebook image](/softwarefactory/gettingstarted#starting-a-kube-notebook)
+- [Configure your Kube Notebook to be able to interact with the Instructional Cluster](/softwarefactory/gettingstarted#configuring-the-kube-notebook)
+- [Launch a containerized job on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster)
 
 ### Prerequisites
 This documentation assumes that you have:
@@ -33,10 +33,10 @@ Containers offer many benefits but here we list a few of the most impactful ones
 1. Consistency
     - The same container given the same input will produce the same output.
 
-[Kubernetes](https://kubernetes.io/) is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Kubernetes allows us to wrap containers in "pods" which are then scheduled and run on the cluster. Similar to workload managers, Kubernetes allows us to make requests for resources needed to run containerized workloads like CPUs, GPUs and memory.
+[Kubernetes](https://kubernetes.io/) is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Kubernetes allows us to wrap containers in "pods" which are then scheduled and run on the cluster. Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory. It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, data generated or files modified etc. Make sure to transfer data that you want to save out of the pod before deleting it.
 
 ## Starting a Kube Notebook
-Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from you web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed for communicating with the kubernetes cluster.
+Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from you web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed. [Kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) is a commandline tool for communicating and interacting with the kubernetes cluster.
 
 Follow these instructions to spin up and connect to your kube notebook:
 1. Sign into [jupyterhub.sdsu.edu](jupyterhub.sdsu.edu)
@@ -80,15 +80,20 @@ Follow these steps to configure the notebook:
         - ![config file in kube folder](/images/softwarefactory/gettingstarted10.png)
 1. Verify that your notebook can communicate with the cluster with this command (replace the namespace):
     - `kubectl get pods -n [your-namespace]`
-    - ![pods in namespace](/images/softwarefactory/gettingstarted11.png)
+        - ![pods in namespace](/images/softwarefactory/gettingstarted11.png)
         - Note: output may vary
 
 Congratulations! Your Kube Notebook is now configured to talk to the National Research Platform.
 
 ## Launching Containers on the Instructional Cluster
-Now that your notebook is configured, let's run your first containerized machine learning job on the instructional cluster. For the following example, we will be using the dataset... [TO-DO]
+Now that your notebook is configured, let's run your first container on the instructional cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
+
+1. From your kube notebook pull up a terminal window and run this command to get a copy of the repository:
+    - `git clone https://github.com/SDSU-Research-CI/hello-sdsu.git`
+        - ![output from git clone hello-sdsu repo](/images/softwarefactory/gettingstarted12.png)
+
 
 ## Next Steps
 Now that you have run your first container on the Instructional Cluster feel free to choose from some of these more advanced topics:
-1. Running pods, batch jobs and deployments
+1. Explore templates for pods, batch jobs and deployments
 1. Interacting with Kubernetes from local commandline
