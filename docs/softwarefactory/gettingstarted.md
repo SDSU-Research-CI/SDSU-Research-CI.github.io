@@ -15,7 +15,7 @@ After reading and following this documentation you should be able to:
 - [Understand containers and kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes)
 - [Start a Jupyter Notebook with the Kube Notebook image](/softwarefactory/gettingstarted#starting-a-kube-notebook)
 - [Configure your Kube Notebook to be able to interact with the Instructional Cluster](/softwarefactory/gettingstarted#configuring-the-kube-notebook)
-- [Launch a containerized job on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster)
+- [Launch a container on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster)
 
 ### Prerequisites
 This documentation assumes that you have:
@@ -39,7 +39,7 @@ Containers offer many benefits but here we list a few of the most impactful ones
 Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from your web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed. [Kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) is a commandline tool for communicating and interacting with the Kubernetes cluster.
 
 Follow these instructions to spin up and connect to your kube notebook:
-1. Sign into [jupyterhub.sdsu.edu](jupyterhub.sdsu.edu)
+1. Sign into [jupyterhub.sdsu.edu](https://jupyterhub.sdsu.edu)
     - Here is a video for [signing into the Instructional Cluster JupyterHub](/instructionalcluster/videos/access)
 1. Complete the Server Options form with the following settings:
     - GPUs = 0
@@ -54,10 +54,10 @@ Follow these instructions to spin up and connect to your kube notebook:
 1. Once the notebook has loaded, you should see the Jupyter Lab UI
     - ![jupyter lab UI](/images/softwarefactory/gettingstarted4.png)
 
-You now have a notebook running that has the kubectl command pre-installed which will allow you to interact with the kubernetes cluster.
+You now have a notebook running that has the kubectl command pre-installed which will allow you to interact with the Kubernetes cluster.
 
 ## Configuring the Kube Notebook
-With the Kube Notebook running, lets configure it to talk to the National Research Platform kubernetes cluster. You will need the kube config from [step 2 of the NRP tasks](/softwarefactory/gettingaccess#nrp-portal-tasks) from the Getting Access guide.
+With the Kube Notebook running, lets configure it to talk to the National Research Platform Kubernetes cluster. You will need the kube config from [step 2 of the NRP tasks](/softwarefactory/gettingaccess#nrp-portal-tasks) from the Getting Access guide.
 
 Follow these steps to configure the notebook:
 1. Upload your config file by clicking the upload files icon and then selecting your config:
@@ -78,12 +78,12 @@ Follow these steps to configure the notebook:
         - `ls ~/.kube`
     - You should see the config file listed:
         - ![config file in kube folder](/images/softwarefactory/gettingstarted10.png)
-1. Verify that your notebook can communicate with the cluster with this command (replace the namespace):
+1. Verify that your notebook can communicate with the cluster with this command (replace the namespace and remove the bracketss):
     - `kubectl get pods -n [your-namespace]`
         - ![pods in namespace](/images/softwarefactory/gettingstarted11.png)
         - Note: output may vary
 
-Congratulations! Your Kube Notebook is now configured to talk to the National Research Platform.
+Congratulations! Your Kube Notebook is now configured to talk to the National Research Platform's Kubernetes cluster.
 
 ## Launching Containers on the Instructional Cluster
 Now that your notebook is configured, let's run your first container on the instructional cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
@@ -126,9 +126,10 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
     CMD ["python3", "hello.py"]
     ```
     - This is a [Dockerfile](https://docs.docker.com/engine/reference/builder/) which defines a container image
-    - This container image is based on the Python 3 image and it copies our hello.py program into the container and then runs it
+    - This container image is based on the Python 3 image and it copies our `hello.py` program into the container and then runs it
 1. Open the Kubernetes manifest file `hello-pod.yaml`; you should see the following:
-    ```YAML
+    ```yaml
+    
     apiVersion: v1
     kind: Pod
     metadata:
@@ -296,6 +297,6 @@ Now, as you might recall, we said that pods are ephemeral and everything in them
 Congratulations! You've run your first pod on the Instructional Cluster, run a program within the container and you've gotten some data back out. With that, you have the basics to be able to run containers on the Instructional Cluster.
 
 ## Next Steps
-Check back here soon for further examples and templates.
+Check back here soon for further examples and templates from Research and Cyberinfrastructure.
 
 Until then, you can also check out the [National Research Platform's documentation](https://docs.nationalresearchplatform.org/) which has some good examples.
