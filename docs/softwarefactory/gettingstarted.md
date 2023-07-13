@@ -33,10 +33,10 @@ Containers offer many benefits but here we list a few of the most impactful ones
 1. Consistency
     - The same container given the same input will produce the same output.
 
-[Kubernetes](https://kubernetes.io/) is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Kubernetes allows us to wrap containers in "pods" which are then scheduled and run on the cluster. Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory. It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, data generated or files modified etc. Make sure to transfer data that you want to save out of the pod before deleting it.
+[Kubernetes](https://kubernetes.io/), often shortened to 'k8s', is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory to run our programs. Kubernetes wraps a container in a [pod](https://kubernetes.io/docs/concepts/workloads/pods/), the smallest compute unit, which is then scheduled and run on the cluster.  It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, content generated or files modified. Make sure to transfer data that you want to save out of the pod before deleting it.
 
 ## Starting a Kube Notebook
-Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from you web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed. [Kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) is a commandline tool for communicating and interacting with the kubernetes cluster.
+Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from your web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed. [Kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) is a commandline tool for communicating and interacting with the Kubernetes cluster.
 
 Follow these instructions to spin up and connect to your kube notebook:
 1. Sign into [jupyterhub.sdsu.edu](jupyterhub.sdsu.edu)
@@ -91,7 +91,50 @@ Now that your notebook is configured, let's run your first container on the inst
 1. From your kube notebook pull up a terminal window and run this command to get a copy of the repository:
     - `git clone https://github.com/SDSU-Research-CI/hello-sdsu.git`
         - ![output from git clone hello-sdsu repo](/images/softwarefactory/gettingstarted12.png)
-
+1. Change directory into the hello-sdsu directory and then list the files:
+    - `cd hello-sdsu`
+    - `ls -la`
+        - ![file listing in hello-sdsu](/images/softwarefactory/gettingstarted13.png)
+1. Notice that the Jupyter Lab file explorer is still viewing the previous directory. Double click the hello-sdsu directory in the file explorer
+    - ![open hello-sdsu in file explorer](/images/softwarefactory/gettingstarted14.png)
+    - ![hello-sdsu files in file explorer](/images/softwarefactory/gettingstarted15.png)
+1. Open the Kubernetes manifest file `hello-pod.yaml`; you should see the following:
+    ```YAML
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: hello-pod
+    spec:
+      containers:
+      - name: hellopod
+        image: ghcr.io/sdsu-research-ci/hello-sdsu:main
+        resources:
+          limits:
+            memory: 100Mi
+            cpu: 100m
+          requests:
+            memory: 100Mi
+            cpu: 100m
+        command: ["sh", "-c", "sleep infinity"]
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - 'key': 'nautilus.io/sdsuinstruction'
+                'operator': 'In'
+                'values': ["true"]
+    ```
+    - Kubernetes uses the [YAML file format](https://en.wikipedia.org/wiki/YAML) to declare object manifests
+    - At first glance there is a lot going on in this file, but for now we will focus on these three things:
+        1. `kind: Pod`
+            - This specifies the kind of Kubernetes object, in this case a pod but we could also specify other [Workload Resources](https://kubernetes.io/docs/concepts/workloads/controllers/) like jobs or deployments
+        1. `image: ghcr.io/sdsu-research-ci/hello-sdsu:main`
+            - This is the container image which the container will be based on
+            - The container image defines things like the OS, file structures, environment variables, packages, libraries etc.
+        1. `command: ["sh", "-c", "sleep infinity"]`
+            - This is the linux command to be run once the container is running inside the pod
+1. 
 
 ## Next Steps
 Now that you have run your first container on the Instructional Cluster feel free to choose from some of these more advanced topics:
