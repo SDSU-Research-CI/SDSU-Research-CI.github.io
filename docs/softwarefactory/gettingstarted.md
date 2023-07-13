@@ -163,13 +163,139 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
             - The container image defines things like the OS, file structures, environment variables, packages, libraries etc.
         1. `command: ["sh", "-c", "sleep infinity"]`
             - This is the linux command to be run once the container is running inside the pod
+            - Typically a pod will be deleted after its command(s) have finished executing, but in this case we have a never-ending command so that we can examine the pod as it is running
 
-### Deploying the Pod
-1. 
+Now that we have explored the files, lets talk about how this all comes together. First, we have the simple Python program `hello.py`, which we could execute on any machine with Python 3 installed. Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/) and thus has Python 3 pre-installed. At this point we can build the container image, or in this example use the [pre-built image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu), and run a container on a container runtime like [Docker](https://www.docker.com/). Lastly we wrap this container in a Kubernetes pod in the `hello-pod.yaml`. At this point, we have everything we need in order to schedule this pod to the Kubernetes cluster. 
+
+### Scheduling the Pod
+Now that we have the files cloned and an understanding of what they do, lets schedule the pod on the Kubernetes cluster. Run the following commands in the terminal of your kube notebook:
+
+1. First, define an environment variable for your namespace: 
+    - `ns=[namespace]`
+    - Note: Replace the namespace with yours and remove the brackets
+1. Tell Kubernetes to schedule and run your pod definition:
+    - `kubectl apply -f hello-pod.yaml -n $ns`
+    - You should see ouput similar to this
+    ```bash
+    pod/hello-pod created
+    ```
+1. Check to see if your pod has been scheduled:
+    - `kubectl get pods -n $ns --watch`
+    - You may see output like this:
+    ```bash
+    NAME        READY   STATUS    RESTARTS   AGE
+    hello-pod   0/1     Pending   0          12s
+    hello-pod   1/1     Running   0          32s
+    ```
+    - Your pod is running once you see the READY column showing 1/1
+    - Hit `ctrl` + `c` to stop watching the pods
+
+At this point the pod is running our container and is executing the command specified in the pod YAML file `sleep infinity`.
+
+### Accessing the Pod
+Now that the pod is running, lets get a bash shell on the container running in the pod:
+
+1. Tell Kuberenetes to launch an interactive shell session using the bash shell
+    - `kubectl exec -it hello-pod -n $ns -- /bin/bash`
+    - You should see output similar to the following:
+    ```bash
+    root@hello-pod:/usr/src/app#
+    ```
+1. Print the working directory
+    - `pwd`
+    - You should see the following:
+    ```bash
+    /usr/src/app
+    ```
+    - The reason we are at this directory is because the container image's Dockerfile specified the working directory with this line
+    ```Dockerfile
+    WORKDIR /usr/src/app
+    ```
+1. List the files in the working directory:
+    - `ls -la`
+    - You should see the following:
+    ```bash
+    total 4
+    drwxr-xr-x 1 root root  22 Jul 11 19:45 .
+    drwxr-xr-x 1 root root  17 Jul 11 19:45 ..
+    -rw-r--r-- 1 root root 348 Jul 11 19:45 hello.py
+    ```
+1. Now let's execute our Python program:
+    - `python hello.py`
+    - You should see the following:
+    ```bash
+    Hello there,
+
+      _______    _______      _______    __     __
+     (   ____)  |   __  \    (   ____)  |  |   |  |
+      \  \      |  |  \  \    \  \      |  |   |  |
+       \  \     |  |   |  )    \  \     |  |   |  |
+     ___\  \    |  |__/  /   ___\  \    |  |___|  |
+    (_______)   |_______/   (_______)   \_________/
+    ```
+1. Lets run the Python program again, but direct the output to a file:
+    - `python hello.py > hello.txt`
+1. Verify the file was created:
+    - `ls -la`
+    - You should see the file hello.txt:
+    ```bash
+    total 8
+    drwxr-xr-x 1 root root  23 Jul 13 18:22 .
+    drwxr-xr-x 1 root root  17 Jul 11 19:45 ..
+    -rw-r--r-- 1 root root 348 Jul 11 19:45 hello.py
+    -rw-r--r-- 1 root root 317 Jul 13 18:22 hello.txt
+    ```
+1. Exit the bash shell from the container:
+    - `exit`
+
+At this point we have run our Python program and created an output file in the container running in our pod on the Kubernetes cluster.
 
 ### Deleting the Pod
+Now that we have run our program and generated some output, lets get our data and then delete the pod:
+
+1. Copy the data from the container's working directory to your kube notebook:
+    - `kubectl -n $ns cp hello-pod:/usr/src/app/hello.txt ./hello.txt`
+    - Note: The kubectl cp command is intended for small file transfers
+1. Check your local directory for the hello.txt file:
+    - `ls`
+    - You should see the file listed:
+    ```bash
+    Dockerfile  README.md  hello-pod.yaml  hello.py  hello.txt
+    ```
+1. Now, tell Kubernetes to delete the pod:
+    - `kubectl -n $ns delete -f hello-pod.yaml`
+    - You should see the following:
+    ```bash
+    pod "hello-pod" deleted
+    ```
+1. Check to make sure the pod was deleted:
+    - `kubectl -n $ns get pods`
+    - You should see something similar to the following:
+    ```
+    No resources found in sdsu-kylekrick namespace.
+    ```
+
+Now, as you might recall, we said that pods are ephemeral and everything in them get deleted once the pod is deleted. Just to illustrate that point, let's schedule the pod again and attach a bash shell to it.
+
+1. `kubectl -n $ns apply -f hello-pod.yaml`
+1. `kubectl -n $ns exec -it hello-pod -- /bin/bash`
+1. Now, check for the hello.txt file:
+    - `ls -la`
+    ```bash
+    total 4
+    drwxr-xr-x 1 root root  22 Jul 11 19:45 .
+    drwxr-xr-x 1 root root  17 Jul 11 19:45 ..
+    -rw-r--r-- 1 root root 348 Jul 11 19:45 hello.py
+    ```
+    - Note that only the `hello.py` program is listed and that our `hello.txt` file is gone. The `hello.py` program is there because the container copies the program each time it is launched, as we specified in the Dockerfile.
+1. Exit the container
+    - `exit`
+1. Tell Kubernetes to delete the pod:
+    - `kubectl -n $ns delete -f hello-pod.yaml`
+
+Congratulations! You've run your first pod on the Instructional Cluster, run a program within the container and you've gotten some data back out. With that, you have the basics to be able to run containers on the Instructional Cluster.
 
 ## Next Steps
-Now that you have run your first container on the Instructional Cluster feel free to choose from some of these more advanced topics:
-1. Explore templates for pods, batch jobs and deployments
-1. Interacting with Kubernetes from local commandline
+Check back here soon for further examples and templates.
+
+Until then, you can also check out the [National Research Platform's documentation](https://docs.nationalresearchplatform.org/) which has some good examples.
