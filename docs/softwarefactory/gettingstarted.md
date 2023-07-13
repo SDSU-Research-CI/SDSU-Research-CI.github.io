@@ -88,6 +88,9 @@ Congratulations! Your Kube Notebook is now configured to talk to the National Re
 ## Launching Containers on the Instructional Cluster
 Now that your notebook is configured, let's run your first container on the instructional cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
 
+### Checking Out the Example Repository
+Follow these steps to get a copy of the repo cloned to your kube notebook and then examine the files to get familiar with them.
+
 1. From your kube notebook pull up a terminal window and run this command to get a copy of the repository:
     - `git clone https://github.com/SDSU-Research-CI/hello-sdsu.git`
         - ![output from git clone hello-sdsu repo](/images/softwarefactory/gettingstarted12.png)
@@ -95,9 +98,35 @@ Now that your notebook is configured, let's run your first container on the inst
     - `cd hello-sdsu`
     - `ls -la`
         - ![file listing in hello-sdsu](/images/softwarefactory/gettingstarted13.png)
-1. Notice that the Jupyter Lab file explorer is still viewing the previous directory. Double click the hello-sdsu directory in the file explorer
+1. Notice that the Jupyter Lab file explorer is still viewing the previous directory. Double click the hello-sdsu directory in the file explorer to open it
     - ![open hello-sdsu in file explorer](/images/softwarefactory/gettingstarted14.png)
     - ![hello-sdsu files in file explorer](/images/softwarefactory/gettingstarted15.png)
+1. Open the `hello.py` program; you should see the following:
+    ```python
+    sdsu = """
+      _______    _______      _______    __     __
+     (   ____)  |   __  \    (   ____)  |  |   |  |
+      \  \      |  |  \  \    \  \      |  |   |  |
+       \  \     |  |   |  )    \  \     |  |   |  |
+     ___\  \    |  |__/  /   ___\  \    |  |___|  |
+    (_______)   |_______/   (_______)   \_________/
+    """
+
+    print(f"Hello there,\n{sdsu}")
+    ```
+    - This program is a simple variation on the typical Hello, World program with a bit of ascii art
+1. Open the `Dockerfile`; you should see the following:
+    ```Dockerfile
+    FROM python:3
+
+    WORKDIR /usr/src/app
+
+    COPY hello.py /usr/src/app/hello.py
+
+    CMD ["python3", "hello.py"]
+    ```
+    - This is a [Dockerfile](https://docs.docker.com/engine/reference/builder/) which defines a container image
+    - This container image is based on the Python 3 image and it copies our hello.py program into the container and then runs it
 1. Open the Kubernetes manifest file `hello-pod.yaml`; you should see the following:
     ```YAML
     apiVersion: v1
@@ -125,7 +154,7 @@ Now that your notebook is configured, let's run your first container on the inst
                 'operator': 'In'
                 'values': ["true"]
     ```
-    - Kubernetes uses the [YAML file format](https://en.wikipedia.org/wiki/YAML) to declare object manifests
+    - Kubernetes manifests are defined in the [YAML file format](https://en.wikipedia.org/wiki/YAML)
     - At first glance there is a lot going on in this file, but for now we will focus on these three things:
         1. `kind: Pod`
             - This specifies the kind of Kubernetes object, in this case a pod but we could also specify other [Workload Resources](https://kubernetes.io/docs/concepts/workloads/controllers/) like jobs or deployments
@@ -134,7 +163,11 @@ Now that your notebook is configured, let's run your first container on the inst
             - The container image defines things like the OS, file structures, environment variables, packages, libraries etc.
         1. `command: ["sh", "-c", "sleep infinity"]`
             - This is the linux command to be run once the container is running inside the pod
+
+### Deploying the Pod
 1. 
+
+### Deleting the Pod
 
 ## Next Steps
 Now that you have run your first container on the Instructional Cluster feel free to choose from some of these more advanced topics:
