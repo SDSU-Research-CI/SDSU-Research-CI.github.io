@@ -57,7 +57,7 @@ Follow these instructions to spin up and connect to your kube notebook:
 You now have a notebook running that has the kubectl command pre-installed which will allow you to interact with the Kubernetes cluster.
 
 ## Configuring the Kube Notebook
-With the Kube Notebook running, lets configure it to talk to the National Research Platform Kubernetes cluster. You will need the kube config from [step 2 of the NRP tasks](/softwarefactory/gettingaccess#nrp-portal-tasks) from the Getting Access guide.
+With the Kube Notebook running, let's configure it to talk to the National Research Platform Kubernetes cluster. You will need the kube config from [step 2 of the NRP tasks](/softwarefactory/gettingaccess#nrp-portal-tasks) from the Getting Access guide.
 
 Follow these steps to configure the notebook:
 1. Upload your config file by clicking the upload files icon and then selecting your config:
@@ -128,8 +128,8 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
     - This is a [Dockerfile](https://docs.docker.com/engine/reference/builder/) which defines a container image
     - This container image is based on the Python 3 image and it copies our `hello.py` program into the container and then runs it
 1. Open the Kubernetes manifest file `hello-pod.yaml`; you should see the following:
-    ```yaml
     
+    ```yaml
     apiVersion: v1
     kind: Pod
     metadata:
@@ -163,13 +163,13 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
             - This is the container image which the container will be based on
             - The container image defines things like the OS, file structures, environment variables, packages, libraries etc.
         1. `command: ["sh", "-c", "sleep infinity"]`
-            - This is the linux command to be run once the container is running inside the pod
+            - This is the linux command passed in as a string array to be executed once the container is running inside the pod
             - Typically a pod will be deleted after its command(s) have finished executing, but in this case we have a never-ending command so that we can examine the pod as it is running
 
-Now that we have explored the files, lets talk about how this all comes together. First, we have the simple Python program `hello.py`, which we could execute on any machine with Python 3 installed. Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/) and thus has Python 3 pre-installed. At this point we can build the container image, or in this example use the [pre-built image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu), and run a container on a container runtime like [Docker](https://www.docker.com/). Lastly we wrap this container in a Kubernetes pod in the `hello-pod.yaml`. At this point, we have everything we need in order to schedule this pod to the Kubernetes cluster. 
+Now that we have explored the files, let's talk about how this all comes together. First, we have the simple Python program `hello.py`, which we could execute on any machine with Python 3 installed. Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/) and thus has Python 3 pre-installed. At this point we can build the container image, or in this example use the [pre-built image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu), and run a container on a container runtime like [Docker](https://www.docker.com/). Lastly we wrap this container in a Kubernetes pod in the `hello-pod.yaml`. At this point, we have everything we need in order to schedule this pod to the Kubernetes cluster. 
 
 ### Scheduling the Pod
-Now that we have the files cloned and an understanding of what they do, lets schedule the pod on the Kubernetes cluster. Run the following commands in the terminal of your kube notebook:
+Now that we have the files cloned and an understanding of what they do, let's schedule the pod on the Kubernetes cluster. Run the following commands in the terminal of your kube notebook:
 
 1. First, define an environment variable for your namespace: 
     - `ns=[namespace]`
@@ -191,10 +191,10 @@ Now that we have the files cloned and an understanding of what they do, lets sch
     - Your pod is running once you see the READY column showing 1/1
     - Hit `ctrl` + `c` to stop watching the pods
 
-At this point the pod is running our container and is executing the command specified in the pod YAML file `sleep infinity`.
+At this point the pod is running our container and is executing the command specified in the pod YAML file: `sleep infinity`.
 
 ### Accessing the Pod
-Now that the pod is running, lets get a bash shell on the container running in the pod:
+Now that the pod is running, let's get a bash shell on the container running in the pod:
 
 1. Tell Kuberenetes to launch an interactive shell session using the bash shell
     - `kubectl exec -it hello-pod -n $ns -- /bin/bash`
@@ -224,7 +224,8 @@ Now that the pod is running, lets get a bash shell on the container running in t
 1. Now let's execute our Python program:
     - `python hello.py`
     - You should see the following:
-    ```bash
+
+    ```
     Hello there,
 
       _______    _______      _______    __     __
@@ -234,7 +235,7 @@ Now that the pod is running, lets get a bash shell on the container running in t
      ___\  \    |  |__/  /   ___\  \    |  |___|  |
     (_______)   |_______/   (_______)   \_________/
     ```
-1. Lets run the Python program again, but direct the output to a file:
+1. let's run the Python program again, but direct the output to a file:
     - `python hello.py > hello.txt`
 1. Verify the file was created:
     - `ls -la`
@@ -252,8 +253,9 @@ Now that the pod is running, lets get a bash shell on the container running in t
 At this point we have run our Python program and created an output file in the container running in our pod on the Kubernetes cluster.
 
 ### Deleting the Pod
-Now that we have run our program and generated some output, lets get our data and then delete the pod:
+Now that we have run our program and generated some output, let's get our data and then delete the pod.
 
+Follow these steps using the terminal in your kube notebook:
 1. Copy the data from the container's working directory to your kube notebook:
     - `kubectl -n $ns cp hello-pod:/usr/src/app/hello.txt ./hello.txt`
     - Note: The kubectl cp command is intended for small file transfers
