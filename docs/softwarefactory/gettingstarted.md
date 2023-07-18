@@ -8,11 +8,11 @@ permalink: /softwarefactory/gettingstarted
 ---
 
 # Getting Started
-This documentation will guide you through your first steps to running containers on the Instructional Cluster. This is intended for SDSU instructors and researchers who are interested in taking advantage of HPC resources for Data Science and Machine Learning workloads.
+This documentation will guide you through your first steps to running containers on the Instructional Cluster. This is intended for SDSU instructors and researchers who are interested in taking advantage of High-Performance Computing (HPC) resources for Data Science and Machine Learning workloads.
 
 ## Learning Outcomes
 After reading and following this documentation you should be able to:
-- [Understand containers and kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes)
+- [Understand containers and Kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes)
 - [Start a Jupyter Notebook with the Kube Notebook image](/softwarefactory/gettingstarted#starting-a-kube-notebook)
 - [Configure your Kube Notebook to be able to interact with the Instructional Cluster](/softwarefactory/gettingstarted#configuring-the-kube-notebook)
 - [Launch a container on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster)
@@ -33,12 +33,12 @@ Containers offer many benefits but here we list a few of the most impactful ones
 1. Consistency
     - The same container given the same input will produce the same output.
 
-[Kubernetes](https://kubernetes.io/), often shortened to 'k8s', is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory to run our programs. Kubernetes wraps a container in a [pod](https://kubernetes.io/docs/concepts/workloads/pods/), the smallest compute unit, which is then scheduled and run on the cluster.  It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, content generated or files modified. Make sure to transfer data that you want to save out of the pod before deleting it.
+[Kubernetes](https://kubernetes.io/), often shortened to 'k8s', is a container orchestration platform for "automating deployment, scaling and management of containerized applications." If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory to run our programs. Kubernetes wraps a container in a [pod](https://kubernetes.io/docs/concepts/workloads/pods/), the smallest Kubernetes compute unit, which is then scheduled and run on the cluster.  It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, content generated or files modified. Make sure to transfer data that you want to save out of the pod before deleting it.
 
 ## Starting a Kube Notebook
 Research and Cyberinfrastructure has created a [Kube Notebook](https://github.com/SDSU-Research-CI/kube-notebook/pkgs/container/kube-notebook) image to simplify access to Kubernetes. This container image will launch a Jupyter Lab instance that you can access from your web browser. From inside Jupyter Lab you can launch a terminal with the kubectl software pre-installed. [Kubectl](https://kubernetes.io/docs/reference/kubectl/kubectl/) is a commandline tool for communicating and interacting with the Kubernetes cluster.
 
-Follow these instructions to spin up and connect to your kube notebook:
+Follow these instructions to spin up and connect to your Kube Notebook:
 1. Sign into [jupyterhub.sdsu.edu](https://jupyterhub.sdsu.edu)
     - Here is a video for [signing into the Instructional Cluster JupyterHub](/instructionalcluster/videos/access)
 1. Complete the Server Options form with the following settings:
@@ -78,7 +78,7 @@ Follow these steps to configure the notebook:
         - `ls ~/.kube`
     - You should see the config file listed:
         - ![config file in kube folder](/images/softwarefactory/gettingstarted10.png)
-1. Verify that your notebook can communicate with the cluster with this command (replace the namespace and remove the bracketss):
+1. Verify that your notebook can communicate with the cluster with this command (replace the namespace and remove the brackets):
     - `kubectl get pods -n [your-namespace]`
         - ![pods in namespace](/images/softwarefactory/gettingstarted11.png)
         - Note: output may vary
@@ -86,7 +86,7 @@ Follow these steps to configure the notebook:
 Congratulations! Your Kube Notebook is now configured to talk to the National Research Platform's Kubernetes cluster.
 
 ## Launching Containers on the Instructional Cluster
-Now that your notebook is configured, let's run your first container on the instructional cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
+Now that your notebook is configured, let's run your first container on the Instructional Cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
 
 ### Checking Out the Example Repository
 Follow these steps to get a copy of the repo cloned to your kube notebook and then examine the files to get familiar with them.
@@ -161,15 +161,14 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
             - This specifies the kind of Kubernetes object, in this case a pod but we could also specify other [Workload Resources](https://kubernetes.io/docs/concepts/workloads/controllers/) like jobs or deployments
         1. `image: ghcr.io/sdsu-research-ci/hello-sdsu:main`
             - This is the container image which the container will be based on
-            - The container image defines things like the OS, file structures, environment variables, packages, libraries etc.
         1. `command: ["sh", "-c", "sleep infinity"]`
-            - This is the linux command passed in as a string array to be executed once the container is running inside the pod
-            - Typically a pod will be deleted after its command(s) have finished executing, but in this case we have a never-ending command so that we can examine the pod as it is running
+            - This is the linux command, passed in as a string array, to be executed once the container is running inside the pod
+            - Typically a pod will be deleted after its command(s) have finished executing, but in this case we have a never-ending command so that we have time to log into and examine the pod as it is running
 
 Now that we have explored the files, let's talk about how this all comes together. First, we have the simple Python program `hello.py`, which we could execute on any machine with Python 3 installed. Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/) and thus has Python 3 pre-installed. At this point we can build the container image, or in this example use the [pre-built image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu), and run a container on a container runtime like [Docker](https://www.docker.com/). Lastly we wrap this container in a Kubernetes pod in the `hello-pod.yaml`. At this point, we have everything we need in order to schedule this pod to the Kubernetes cluster. 
 
 ### Scheduling the Pod
-Now that we have the files cloned and an understanding of what they do, let's schedule the pod on the Kubernetes cluster. Run the following commands in the terminal of your kube notebook:
+Now that we have the files cloned and an understanding of what they do, let's schedule the pod on the Kubernetes cluster. Run the following commands in the terminal of your Kube Notebook:
 
 1. First, define an environment variable for your namespace: 
     - `ns=[namespace]`
@@ -235,7 +234,7 @@ Now that the pod is running, let's get a bash shell on the container running in 
      ___\  \    |  |__/  /   ___\  \    |  |___|  |
     (_______)   |_______/   (_______)   \_________/
     ```
-1. let's run the Python program again, but direct the output to a file:
+1. Let's run the Python program again, but direct the output to a file:
     - `python hello.py > hello.txt`
 1. Verify the file was created:
     - `ls -la`
@@ -255,8 +254,8 @@ At this point we have run our Python program and created an output file in the c
 ### Deleting the Pod
 Now that we have run our program and generated some output, let's get our data and then delete the pod.
 
-Follow these steps using the terminal in your kube notebook:
-1. Copy the data from the container's working directory to your kube notebook:
+Follow these steps using the terminal in your Kube Notebook:
+1. Copy the data from the container's working directory to your Kube Notebook:
     - `kubectl -n $ns cp hello-pod:/usr/src/app/hello.txt ./hello.txt`
     - Note: The kubectl cp command is intended for small file transfers
 1. Check your local directory for the hello.txt file:
