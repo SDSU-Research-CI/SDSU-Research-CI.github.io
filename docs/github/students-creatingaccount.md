@@ -12,7 +12,7 @@ permalink: /github/students/creating-account
 Creating a GitHub account is a pre-requisite to completing assignments in GitHub Classrooms.
 In addition to being able to complete coursework, a GitHub account is valubale as it allows students to showcase their academic and personal coding knowledge, enhancing their academic and professional opportunities.
 For this reason, we highly recommend that students create their GitHub accounts with a personal email address so that they can maintain access to it after they graduate.
-If you already have a personal GitHub account, feel free to jump ahead to the section on Linking your SDSUid.
+If you already have a personal GitHub account, feel free to jump ahead to the section on [Linking your SDSUid](#linking-your-sdsuid).
 
 Follow these steps to create a GitHub account:
 1. Navigate to the [Join GitHub](https://github.com/signup) page
@@ -65,7 +65,7 @@ Follow these instructions to link your SDSUid with your GitHub account:
 1. Check your SDSUid inbox for the GitHub verification email
     - ![](/images/github/linking-account-5.png)
     - Click the 'Verify email address' button
-1. You should be get this message:
+1. You should get this message:
     - ![](/images/github/linking-account-6.png)
 1. Go to your [email settings](https://github.com/settings/emails)
     - ![](/images/github/linking-account-7.png)
