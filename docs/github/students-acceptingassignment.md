@@ -13,7 +13,7 @@ When you are a student in a GitHub Classroom you must accept an assignment befor
 Once you accept the assignment you will create and get access to a unique GitHub repo based on the template repo.
 This documentation assumes that you have created a [GitHub account](/github/students/creating-account) and have downloaded & installed [git](https://git-scm.com/downloads).
 
-1. Paste the link into your browser
+1. Paste the assignment link into your browser
     - You may be prompted to sign in
     - ![](/images/github/accepting-assignment-1.png)
     - Enter your credentials and click 'Sign in'
