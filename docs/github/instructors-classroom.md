@@ -28,3 +28,6 @@ Once you have access to GitHub Classroom you can create your first classroom. Fo
     - ![](/images/github/classroom6.png)
 1. Welcome to your new GitHub Classroom!
     - ![](/images/github/classroom7.png)
+
+## Next Steps
+With your new GitHub Classroom created, continue on to [create your first assignment](/github/instructors/creating-assignment)
