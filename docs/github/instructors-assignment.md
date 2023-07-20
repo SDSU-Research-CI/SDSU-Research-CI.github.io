@@ -11,18 +11,24 @@ permalink: /github/instructors/creating-assignment
 # Creating an Assignment
 Once your GitHub classroom has been created, you can start creating assignments. GitHub classroom supports both individual and group assignments as well as making the assignments viewable to other students or private between the student and teacher.
 
-Assignment will be based on an existing GitHub repository, so you must create or find a repo to use for an assignment. In this example we will use the GitHub Classroom's [github-starter-course](https://github.com/sandiegostate/github/starter-course/tree/main) which is available on the [sandiegstate](https://github.com/sandiegostate) GitHub Organization.
+Assignment will be based on an existing GitHub repository, so you must create or find a repo to use for an assignment. In this example we will use the GitHub Classroom's [github-starter-course](https://github.com/sandiegostate/github-starter-course) which is available on the [sandiegstate](https://github.com/sandiegostate) GitHub Organization.
 
 Follow these steps to create your first assignment:
 1. If not already signed in, sign in to [https://classroom.github.com/](https://classroom.github.com/)
-1. Click 'Create an assignment'
+1. Click one of your available classrooms
+    - ![](/images/github/pick-classroom1.png)
+1. If this is your first assignment for this classroom you will see the below:
     - ![](/images/github/classroom7.png)
+    - Click 'Create an assignment'
+1. If this is not the first assignment for the classroom, you may instead see the below:
+    - ![](/images/github/new-assignment1.png)
+    - Click 'New assignment'
 1. Fill out the form and then click 'Contine'
     - ![](/images/github/classroom8.png)
     - In this example we have chosen an individual assignment, no deadline and private repos so that each student can only see their own work
 1. From the following form, click the 'Select a repository' dropdown and paste in 'github-starter-course'
     - ![](/images/github/classroom9.png)
-1. Select the 'sandiegostate/github/starter-course' option
+1. Select the 'sandiegostate/github-starter-course' option
     - ![](/images/github/classroom10.png)
 1. Optionally, click the 'Select an editor' dropdown and choose 'Visual Studio Code'
     - ![](/images/github/classroom11.png)
@@ -30,12 +36,14 @@ Follow these steps to create your first assignment:
     - ![](/images/github/classroom12.png)
 1. We will not be using autograding on this example assignment, but feel free to explore the options. When done, click 'Create assignment'
     - ![](/images/github/classroom13.png)
-1. If you run into this page, just click the 'Try going back to classroom dashboard' link
-    - ![](/images/github/classroom14.png)
-1. Click on your classroom
-    - ![](/images/github/classroom15.png)
-1. Click on your assignment
-    - ![](/images/github/classroom16.png)
+1. You should see your assignment:
+    - ![](/images/github/new-assignment2.png)
+        1. If instead you run into this page, just click the 'Try going back to classroom dashboard' link
+            - ![](/images/github/classroom14.png)
+        1. Click on your classroom
+            - ![](/images/github/classroom15.png)
+        1. Click on your assignment
+            - ![](/images/github/classroom16.png)
 1. Click 'Got it' on the pop-up
     - ![](/images/github/classroom17.png)
 1. Click the copy button to copy the assignment invitation URL
