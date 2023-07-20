@@ -15,6 +15,8 @@ GitHub Classroom is in early access mode for the Fall 2023 semester.
 GitHub Classroom offers individual and group assignments and can make them pulic or private.
 It also has features for viewing progress, providing feedback and integrating existing teaching tools.
 
+![](/images/github/classroom2.png)
+
 ## Features
 GitHub Classroom offers these features:
 - [Assignment templates](https://docs.github.com/en/education/manage-coursework-with-github-classroom/teach-with-github-classroom/create-an-assignment-from-a-template-repository)
