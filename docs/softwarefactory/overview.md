@@ -4,7 +4,7 @@ title: Overview
 parent: Software Factory
 nav_order: 1
 description: ""
-permalink: /softwarefactory
+permalink: /softwarefactory/
 ---
 
 # Overview
