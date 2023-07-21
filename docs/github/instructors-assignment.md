@@ -9,9 +9,16 @@ permalink: /github/instructors/creating-assignment
 ---
 
 # Creating an Assignment
-Once your GitHub classroom has been created, you can start creating assignments. GitHub classroom supports both individual and group assignments as well as making the assignments viewable to other students or private between the student and teacher.
+Once your GitHub Classroom has been created, you can start creating assignments. GitHub classroom supports both individual and group assignments as well as making the assignments viewable to other students or private between the student and teacher.
 
-Assignment will be based on an existing GitHub repository, so you must create or find a repo to use for an assignment. In this example we will use the GitHub Classroom's [github-starter-course](https://github.com/sandiegostate/github-starter-course) which is available on the [sandiegstate](https://github.com/sandiegostate) GitHub Organization.
+Assignments will be based on an existing GitHub repository, so you must create or find a repo to use for an assignment. 
+In this example we will use the GitHub Classroom's [github-starter-course](https://github.com/sandiegostate/github-starter-course) which is available on the [sandiegostate](https://github.com/sandiegostate) GitHub Organization. 
+Note that this repository is private, so you must first [request access to GitHub Classroom](/github/instructors/requesting-access).
+
+{: .highlight }
+We highly recommend using the github-starter-course assignment as it ensures students have a foundation for using Git and GitHub.
+
+This documentation assumes that you have already [created a GitHub Classroom](/github/instructors/creating-classroom).
 
 Follow these steps to create your first assignment:
 1. If not already signed in, sign in to [https://classroom.github.com/](https://classroom.github.com/)
