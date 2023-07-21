@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 parent: Software Factory
-nav_order: 2
+nav_order: 3
 description: ""
 permalink: /softwarefactory/gettingstarted
 ---
