@@ -2,7 +2,7 @@
 layout: default
 title: Getting Access
 parent: Software Factory
-nav_order: 1
+nav_order: 2
 description: ""
 permalink: /softwarefactory/gettingaccess
 ---
