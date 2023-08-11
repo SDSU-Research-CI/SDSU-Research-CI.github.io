@@ -26,7 +26,7 @@ SDSU hosts 15 Dell PowerEdge servers supporting the instructional cluster.
 
 ## Storage
 
-Each user of the instructional cluster is provided 5GB of storage space accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes.
+Each user of the instructional cluster is provided 20 GB of storage space accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes.
 
 ## Networking
 
