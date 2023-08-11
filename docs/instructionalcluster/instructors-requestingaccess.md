@@ -8,9 +8,6 @@ description: ""
 permalink: /instructionalcluster/instructors/requestingaccess
 ---
 
-{: .highlight }
-The instructional cluster is in early access mode for the spring 2023 semester.
-
 # Requesting Access
 
 The instructional cluster is available for instructional course use. To request access please submit a <a href="https://sdsu.service-now.com/sp" target="_blank">Service Now request </a> form by using the Form Navigation images below. If the request is course related, the following details will be required:

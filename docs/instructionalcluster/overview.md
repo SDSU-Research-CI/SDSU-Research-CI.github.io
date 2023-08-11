@@ -7,9 +7,6 @@ description: ""
 permalink: /instructionalcluster
 ---
 
-{: .highlight }
-The instructional cluster is in early access mode for the spring 2023 semester.
-
 # Overview
 
 SDSU's instructional cluster provides undergraduate and graduate students with access to research-class CPU/GPU resources for coursework. Instructors may request access for their courses via ServiceNow. Students will receive access at the start of the semester for the requested course.
