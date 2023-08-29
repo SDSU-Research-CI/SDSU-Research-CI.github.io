@@ -42,4 +42,17 @@ graph LR;
 
 | Name                  | Image               | Course         | Software             |
 |:----------------------|:--------------------|:---------------|:---------------------|
-| None                  |                     |                |                      |
+| Eclipse C/C++ Desktop | [eclipse-notebook](https://github.com/SDSU-Research-CI/eclipse-notebook) | COMPE 160 Introduction to Computer Programming | (everything in minimal-notebook)<br/>Eclipse IDE for C/C++ Developers 2022-03 release for Linux x86_64<br/>[icedtea-netx](https://www.ubuntuupdates.org/package/core/lunar/universe/base/icedtea-netx) [net-tools](https://sourceforge.net/projects/net-tools/) [dbus-x11](https://packages.debian.org/sid/dbus-x11) [firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_system-firefox-installation-for-advanced-users) [xfce4](https://www.xfce.org/about) [xfce4-panel](https://docs.xfce.org/xfce/xfce4-panel/start) [xfce4-session](https://docs.xfce.org/xfce/xfce4-session/start) [xfce4-settings](https://docs.xfce.org/xfce/xfce4-settings/start) [xorg](https://www.x.org/wiki/) [xubuntu-icon-theme](https://packages.ubuntu.com/search?keywords=xubuntu-icon-theme) |
+| Kube Notebook         | [kube-notebook](https://github.com/SDSU-Research-CI/kube-notebook) | Research for Interacting with Kubernetes | (everything in minimal-notebook)<br/>[kubectl](https://kubernetes.io/docs/reference/kubectl/) [rclone](https://rclone.org/) [vim](https://www.vim.org/) [git](https://git-scm.com/) [unzip](https://infozip.sourceforge.net/UnZip.html) [zip](https://infozip.sourceforge.net/Zip.html) [curl](https://curl.se/) [wget](https://www.gnu.org/software/wget/) |
+| SageMath Notebook     | [sagemath-notebook](https://github.com/SDSU-Research-CI/sagemath-notebook) | MATH 522 Number Theory | (everything in scipy-notebook)<br/>[sage](https://doc.sagemath.org/html/en/index.html#) |
+| GIS Notebook          | [gis-notebook](https://github.com/SDSU-Research-CI/gis-notebook) | GEOG 582 GIS Programming with Python | (everything in scipy-notebook)<br/>[geopandas](https://geopandas.org/en/stable/docs/user_guide.html) [geoplot](https://pypi.org/project/geoplot/) [rasterio](https://rasterio.readthedocs.io/en/stable/) [laspy](https://laspy.readthedocs.io/en/latest/) [netcdf4](https://pypi.org/project/netCDF4/) [psycopg2](https://pypi.org/project/psycopg2/) [networkx](https://networkx.org/) [pysal](https://pysal.org/) [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) [selenium](https://www.selenium.dev/) |
+
+The following diagram shows the relationship between the general and custom container images.
+
+```mermaid
+graph LR;
+    A[minimum-notebook]-->B[Eclipse-Desktop];
+    A-->F[Kube-Notebook];
+    A-->C[scipy-notebook]-->D[SageMath-Notebook];
+    C-->E[GIS-Notebook];
+```
