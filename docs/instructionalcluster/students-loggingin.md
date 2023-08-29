@@ -14,7 +14,7 @@ JupyterHub is available using a web browser and your SDSUid to authenticate. Onl
 
 [Launch JupyterHub](https://sdsu-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
 
-1. Use your web browser to navigate to [https://sdsu-jupyterhub.nrp-nautilus.io/](https://sdsu-jupyterhub.nrp-nautilus.io/){:target="_blank"}.
+1. Use your web browser to navigate to [https://jupyterhub.sdsu.edu/](https://jupyterhub.sdsu.edu/){:target="_blank"}.
 1. Click the Sign in with CILogon button.
 1. Select **San Diego State University** from the drop down and check the **Remember this selection** checkbox.
 ![CILogon Prompt](/images/instructionalcluster/cilogon.png)
