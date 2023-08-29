@@ -16,5 +16,10 @@ Sometimes, users may encounter a 503 error when attempting to launch a server.
 ## Reload the Page
 The current solution is to **reload the page** that is trying to access the Instructional Cluster. This simple action can clear the error state and allow you to proceed with launching a new or existing server without further interruption.
 
+### Keyboard Shortcuts for Page Reload
+
+Windows: `CTRL + R`<br/>
+Mac: `CMD + R`
+
 {: .note }
 If you continue to encounter persistent 503 errors despite reloading the page, please email **itd-research.ci@sdsu.edu** for further assistance.
