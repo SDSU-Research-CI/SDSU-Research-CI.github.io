@@ -15,6 +15,12 @@ permalink: /instructionalcluster/usage
 | Course | Class | Use | Semester | Instructor |
 |:-------|:------|:----|:---------|:-----------|
 | COMPE 160 Introduction to Computer Programming | TBD | TBD | Fall 2023 | Paolini |
+| ASTR 680 Astronomical Techniques | 6297 | TBD | Fall 2023 | Quimby |
+| GEOG 582 GIS Prog With Python | 7518/8357 | TBD | Fall 2023 | Nara |
+| MATH 340 Mathematical Programming | 10879/11793 | TBD | Fall 2023 | Tang |
+| MATH 522 Number Theory | 10424 | TBD | Fall 2023 | Kirby |
+| P H 700A Principle Program Data Structures in Public Health | 3088 | TBD | Fall 2023 | Valafar |
+
 
 ## Previous Classes
 
