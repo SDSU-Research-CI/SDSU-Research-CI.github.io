@@ -46,13 +46,15 @@ graph LR;
 | Kube Notebook         | [kube-notebook](https://github.com/SDSU-Research-CI/kube-notebook) | Research for Interacting with Kubernetes | (everything in minimal-notebook)<br/>[kubectl](https://kubernetes.io/docs/reference/kubectl/) [rclone](https://rclone.org/) [vim](https://www.vim.org/) [git](https://git-scm.com/) [unzip](https://infozip.sourceforge.net/UnZip.html) [zip](https://infozip.sourceforge.net/Zip.html) [curl](https://curl.se/) [wget](https://www.gnu.org/software/wget/) |
 | SageMath Notebook     | [sagemath-notebook](https://github.com/SDSU-Research-CI/sagemath-notebook) | MATH 522 Number Theory | (everything in scipy-notebook)<br/>[sage](https://doc.sagemath.org/html/en/index.html#) |
 | GIS Notebook          | [gis-notebook](https://github.com/SDSU-Research-CI/gis-notebook) | GEOG 582 GIS Programming with Python | (everything in scipy-notebook)<br/>[geopandas](https://geopandas.org/en/stable/docs/user_guide.html) [geoplot](https://pypi.org/project/geoplot/) [rasterio](https://rasterio.readthedocs.io/en/stable/) [laspy](https://laspy.readthedocs.io/en/latest/) [netcdf4](https://pypi.org/project/netCDF4/) [psycopg2](https://pypi.org/project/psycopg2/) [networkx](https://networkx.org/) [pysal](https://pysal.org/) [beautifulsoup4](https://pypi.org/project/beautifulsoup4/) [selenium](https://www.selenium.dev/) |
+| Biopython Notebook    | [biopython-notebook](https://github.com/SDSU-Research-CI/biopython-notebook) | P H 700A Principle Program Data Structures in Public Health | (everything in scipy-notebook)<br/>[biopython](https://biopython.org/wiki/Documentation) [pytest](https://docs.pytest.org/en/7.4.x/) |
 
 The following diagram shows the relationship between the general and custom container images.
 
 ```mermaid
 graph LR;
     A[minimum-notebook]-->B[Eclipse-Desktop];
+    A-->C[Scipy-Notebook]-->D[SageMath-Notebook];
     A-->F[Kube-Notebook];
-    A-->C[scipy-notebook]-->D[SageMath-Notebook];
     C-->E[GIS-Notebook];
+    C-->G[Biopython-Notebook]
 ```
