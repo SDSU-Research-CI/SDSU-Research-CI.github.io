@@ -14,7 +14,13 @@ permalink: /instructionalcluster/usage
 
 | Course | Class | Use | Semester | Instructor |
 |:-------|:------|:----|:---------|:-----------|
-| COMPE 160 Introduction to Computer Programming | TBD | TBD | Fall 2023 | Paolini |
+| COMPE 160 Introduction to Computer Programming | 2085 | TBD | Fall 2023 | Paolini |
+| ASTR 680 Astronomical Techniques | 6297 | TBD | Fall 2023 | Quimby |
+| GEOG 582 GIS Programming With Python | 8357 | TBD | Fall 2023 | Nara |
+| MATH 340 Mathematical Programming | 11793 | TBD | Fall 2023 | Tang |
+| MATH 522 Number Theory | 10424 | TBD | Fall 2023 | Kirby |
+| P H 700A Principle Program Data Structures in Public Health | 3088 | TBD | Fall 2023 | Valafar |
+
 
 ## Previous Classes
 
@@ -29,6 +35,6 @@ permalink: /instructionalcluster/usage
 
 | Project Name | Researcher | Use |
 |:-------------|:-----------|:----|
-| Multimodal Synthetic Data Generation | Stephanie Zarrouk | The Jupyterhub GPU cluster is aiding research on multimodal synthetic data generation using the ImageTextGen (ITG) framework, integrating GANs and transformers. ITG generates unbiased synthetic medical data with correlated image and text data types, facilitating precise and responsible training and validation of data-driven models. |
+| Multimodal Synthetic Data Generation | Stephanie Zarrouk | The JupyterHub GPU cluster is aiding research on multimodal synthetic data generation using the ImageTextGen (ITG) framework, integrating GANs and transformers. ITG generates unbiased synthetic medical data with correlated image and text data types, facilitating precise and responsible training and validation of data-driven models. |
 
 ## Previous Research Projects
