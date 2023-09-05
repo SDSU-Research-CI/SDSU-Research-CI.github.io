@@ -12,10 +12,10 @@ This documentation will guide you through your first steps to running containers
 
 ## Learning Outcomes
 After reading and following this documentation you should be able to:
-- [Understand containers and Kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes)
-- [Start a Jupyter Notebook with the Kube Notebook image](/softwarefactory/gettingstarted#starting-a-kube-notebook)
-- [Configure your Kube Notebook to be able to interact with the Instructional Cluster](/softwarefactory/gettingstarted#configuring-the-kube-notebook)
-- [Launch a container on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster)
+- [Understand containers and Kubernetes at a high-level](/softwarefactory/gettingstarted#containers-and-kubernetes) (5 mins)
+- [Start a Jupyter Notebook with the Kube Notebook image](/softwarefactory/gettingstarted#starting-a-kube-notebook) (5 mins)
+- [Configure your Kube Notebook to be able to interact with the Instructional Cluster](/softwarefactory/gettingstarted#configuring-the-kube-notebook) (5 mins)
+- [Launch a container on the Instructional Cluster](/softwarefactory/gettingstarted#launching-containers-on-the-instructional-cluster) (15 mins)
 
 ### Prerequisites
 This documentation assumes that you have:
