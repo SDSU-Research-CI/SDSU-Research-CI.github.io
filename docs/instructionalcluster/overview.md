@@ -9,7 +9,7 @@ permalink: /instructionalcluster
 
 # Overview
 
-SDSU's instructional cluster or VERNE (Visionary Education Research Network Ecosystem) provides undergraduate and graduate students with access to research-class CPU/GPU resources for coursework. Instructors may [request access](/instructionalcluster/instructors/requestingaccess) for their courses via ServiceNow. Students will receive access at the start of the semester for the requested course.
+SDSU's instructional cluster or Visionary Education Research Network Environment (VERNE) provides undergraduate and graduate students with access to research-class CPU/GPU resources for coursework. Instructors may [request access](/instructionalcluster/instructors/requestingaccess) for their courses via ServiceNow. Students will receive access at the start of the semester for the requested course.
 
 VERNE is also available during nonpeak times for specific approved projects. These requests can be made by ServiceNow and will be reviewed on a case-by-case basis.
 
