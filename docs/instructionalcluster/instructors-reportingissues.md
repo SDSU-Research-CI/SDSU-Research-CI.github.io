@@ -12,7 +12,7 @@ permalink: /instructionalcluster/instructors/reportingissues
 First and last name, SDSUid (i.e. aztec@sdsu.edu), and ask the student to take the screenshot and/or copy and paste the event log details
 --->
 # ServiceNow Requests
-To submit a ServiceNow request for issues related to the Instructional Cluster, please follow the link to SDSU's <a href="https://sdsu.service-now.com/sp" target="_blank">ServiceNow portal</a>, click on **Report a Problem**, and provide a detailed description that includes the keyword *Instructional Cluster* within the description field.<br><br>
+To submit a ServiceNow request for issues related to VERNE, please follow the link to SDSU's <a href="https://sdsu.service-now.com/sp" target="_blank">ServiceNow portal</a>, click on **Report a Problem**, and provide a detailed description that includes the keyword *VERNE* within the description field.<br><br>
 
 Always provide a relevant screenshot of the issue when possible ([example](#screenshot-ex)).<br><br>
 
@@ -22,7 +22,7 @@ Always provide a relevant screenshot of the issue when possible ([example](#scre
 
 # Submitting Emails
 
-If students encounter any issues with accessing and using the Instructional Cluster, we appreciate your collaboration in submitting detailed and informative emails to the [Research & Cyberinfrastructure ](mailto:itd-research.ci@sdsu.edu) department. To ensure smooth troubleshooting, please follow the guidelines below when submitting emails:
+If students encounter any issues with accessing and using VERNE, we appreciate your collaboration in submitting detailed and informative emails to the [Research & Cyberinfrastructure ](mailto:itd-research.ci@sdsu.edu) department. To ensure smooth troubleshooting, please follow the guidelines below when submitting emails:
 
 1. Email Subject
     - **Subject Line:** Include a descriptive subject line that summarizes the issue concisely.<br><br>

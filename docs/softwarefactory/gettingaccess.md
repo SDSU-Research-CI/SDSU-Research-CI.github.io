@@ -8,7 +8,7 @@ permalink: /softwarefactory/gettingaccess
 ---
 
 # Getting Access
-In order to run containers on the Instructional Cluster, you will need an account with the National Research Platform and you will need to be added to a namespace. A namespace allows its members to share access to containers, enabling collaboration.
+In order to run containers on VERNE, you will need an account with the National Research Platform and you will need to be added to a namespace. A namespace allows its members to share access to containers, enabling collaboration.
 
 In addition to the written directions below, we've recorded a video walkthrough for [getting an account and requesting access to a namespace](https://mediasite.sdsu.edu/Mediasite/Play/8e7f235bc56f44fdb4586cffe1e477a71d).
 
@@ -58,7 +58,7 @@ Congratulations! You now have an NRP account and you're one step closer to runni
         - `ls ~/.kube`
 
 ## Requesting Access to a Namespace
-Now that you have signed into the NRP Portal, the Research and Cyberinfrastructure team can add you to a namespace which will allow you to run containers on the Instructional Cluster.
+Now that you have signed into the NRP Portal, the Research and Cyberinfrastructure team can add you to a namespace which will allow you to run containers on VERNE.
 
 Submit the [Research Cyberinfrastructure Consultation](https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=029639611bb825505764fd1b1e4bcb3a&sysparm_category=29ac153fdbbf4c9024094672399619e9) ServiceNow form with the following:
 1. Request Type should be "Software Factory Containerization"
@@ -71,4 +71,4 @@ Submit the [Research Cyberinfrastructure Consultation](https://sdsu.service-now.
 After you submit the form a member of the Research and Cyberinfrastructure team will follow up and add you to the desired namespace.
 
 ## Next Steps
-Once you have an NRP account and have been added to a namespace, continue to the [Getting Started page](./gettingstarted) to run your first container on the Instructional Cluster.
+Once you have an NRP account and have been added to a namespace, continue to the [Getting Started page](./gettingstarted) to run your first container on VERNE.

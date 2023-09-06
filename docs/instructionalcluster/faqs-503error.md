@@ -14,7 +14,7 @@ Sometimes, users may encounter a 503 error when attempting to launch a server.
 ![Example 503 Error](/images/instructionalcluster/faq-503error.png)
 
 ## Reload the Page
-The current solution is to **reload the page** that is trying to access the Instructional Cluster. This simple action can clear the error state and allow you to proceed with launching a new or existing server without further interruption.
+The current solution is to **reload the page** that is trying to access VERNE. This simple action can clear the error state and allow you to proceed with launching a new or existing server without further interruption.
 
 ### Keyboard Shortcuts for Page Reload
 
