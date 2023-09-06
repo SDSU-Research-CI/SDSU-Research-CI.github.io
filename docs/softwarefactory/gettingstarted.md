@@ -8,7 +8,7 @@ permalink: /softwarefactory/gettingstarted
 ---
 
 # Getting Started
-This documentation will guide you through your first steps to running containers on the Instructional Cluster. This is intended for SDSU instructors and researchers who are interested in taking advantage of High-Performance Computing (HPC) resources for Data Science and Machine Learning workloads.
+This documentation will guide you through your first steps to running containers on VERNE. This is intended for SDSU instructors and researchers who are interested in taking advantage of High-Performance Computing (HPC) resources for Data Science and Machine Learning workloads.
 
 ## Learning Outcomes
 After reading and following this documentation you should be able to:
@@ -29,7 +29,7 @@ Containers offer many benefits but here we list a few of the most impactful ones
 1. Isolated Runtime Environments
     - Two or more containers running on the same system do not affect one another.
 1. Portability
-    - The same container can be run on a laptop, on the cloud, or on the Instructional Cluster without being modified.
+    - The same container can be run on a laptop, on the cloud, or on VERNE without being modified.
 1. Consistency
     - The same container given the same input will produce the same output.
 
@@ -40,7 +40,7 @@ Research and Cyberinfrastructure has created a [Kube Notebook](https://github.co
 
 Follow these instructions to spin up and connect to your Kube Notebook:
 1. Sign into [jupyterhub.sdsu.edu](https://jupyterhub.sdsu.edu)
-    - Here is a video for [signing into the Instructional Cluster JupyterHub](/instructionalcluster/videos/access)
+    - Here is a video for [signing into VERNE JupyterHub](/instructionalcluster/videos/access)
 1. Complete the Server Options form with the following settings:
     - GPUs = 0
     - CPU Cores = 2
@@ -85,8 +85,8 @@ Follow these steps to configure the notebook:
 
 Congratulations! Your Kube Notebook is now configured to talk to the National Research Platform's Kubernetes cluster.
 
-## Launching Containers on the Instructional Cluster
-Now that your notebook is configured, let's run your first container on the Instructional Cluster. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
+## Launching Containers on VERNE
+Now that your notebook is configured, let's run your first container on VERNE. For the following example, we will be using the simple [Hello SDSU repository](https://github.com/SDSU-Research-CI/hello-sdsu/tree/main) and its associated [container image](https://github.com/SDSU-Research-CI/hello-sdsu/pkgs/container/hello-sdsu).
 
 ### Checking Out the Example Repository
 Follow these steps to get a copy of the repo cloned to your kube notebook and then examine the files to get familiar with them.
@@ -295,7 +295,7 @@ Now, as you might recall, we said that pods are ephemeral and everything in them
 1. Tell Kubernetes to delete the pod:
     - `kubectl -n $ns delete -f hello-pod.yaml`
 
-Congratulations! You've run your first pod on the Instructional Cluster, run a program within the container and you've gotten some data back out. With that, you have the basics to be able to run containers on the Instructional Cluster.
+Congratulations! You've run your first pod on VERNE, run a program within the container and you've gotten some data back out. With that, you have the basics to be able to run containers on VERNE.
 
 ## Next Steps
 Check back here soon for further examples and templates from Research and Cyberinfrastructure.

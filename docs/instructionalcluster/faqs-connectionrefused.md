@@ -9,7 +9,7 @@ permalink: /instructionalcluster/faqs/connectionrefused
 ---
 
 # Fixing Connection Refused
-Have you encountered an error message like this and are unable to get to the Instructional Cluster?
+Have you encountered an error message like this and are unable to get to VERNE?
 
 ![Connection refused](/images/instructionalcluster/faq-connectionrefused1.png)
 
