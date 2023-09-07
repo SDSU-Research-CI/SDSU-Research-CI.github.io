@@ -15,9 +15,9 @@ permalink: /instructionalcluster/usage
 | Course | Class | Use | Semester | Instructor |
 |:-------|:------|:----|:---------|:-----------|
 | COMPE 160 Introduction to Computer Programming | 2085 | TBD | Fall 2023 | Paolini |
-| ASTR 680 Astronomical Techniques | 6297 | TBD | Fall 2023 | Quimby |
+| ASTR 680 Astronomical Techniques | 6297 | Students work in Linux and use the NumPy, SciPy, and Astropy packages in Python to process and analyze astronomical data. | Fall 2023 | Quimby |
 | GEOG 582 GIS Programming With Python | 8357 | TBD | Fall 2023 | Nara |
-| MATH 340 Mathematical Programming | 11793 | TBD | Fall 2023 | Tang |
+| MATH 340 Mathematical Programming | 10879 | Students use [**Stack SciPy**](/instructionalcluster/images) to gain experience of using Python to do the following, (i) Learn the 'science' of computer programming. (ii) Learn the 'art' of computer programming. (iii) Represent abstract mathematics as computer code and translate computer code into mathematics. (iv) Visualize and describe data. (v) Learn in what ways modern computing is done. | Fall 2023 | Tang |
 | MATH 522 Number Theory | 10424 | TBD | Fall 2023 | Kirby |
 | P H 700A Principle Program Data Structures in Public Health | 3088 | TBD | Fall 2023 | Valafar |
 
