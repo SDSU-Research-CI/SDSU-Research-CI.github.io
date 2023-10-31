@@ -154,6 +154,10 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
               - 'key': 'nautilus.io/sdsuinstruction'
                 'operator': 'In'
                 'values': ["true"]
+      tolerations:
+        - effect: NoSchedule
+          key: nautilus.io/sdsu-fix
+          operator: Exists
     ```
     - Kubernetes manifests are defined in the [YAML file format](https://en.wikipedia.org/wiki/YAML)
     - At first glance there is a lot going on in this file, but for now we will focus on these three things:
