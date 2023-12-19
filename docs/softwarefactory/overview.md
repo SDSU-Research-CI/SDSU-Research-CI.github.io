@@ -8,7 +8,7 @@ permalink: /softwarefactory/
 ---
 
 # Overview
-SDSU's Software Factory provides faculty and researchers with services and support for containerizing their instructional and research workloads to take advantage of High Performance Computing (HPC) resources. The Softare Factory employs student assistants and trains them in DevOps practices like containerization, git source control, and continuous integration & continuous delivery (CI/CD) pipelines. Software Factory students consult with faculty and researchers to understand their computing needs and data workflows in order to create software containers that enable their use cases.
+SDSU's Software Factory provides faculty and researchers with services and support for containerizing their instructional and research workloads to take advantage of High Performance Computing (HPC) resources. The Software Factory employs student assistants and trains them in DevOps practices like containerization, git source control, and continuous integration & continuous delivery (CI/CD) pipelines. Software Factory students consult with faculty and researchers to understand their computing needs and data workflows in order to create software containers that enable their use cases.
 
 ![Software Factory](/images/softwarefactory/sf_logo_small.png)
 
