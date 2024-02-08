@@ -4,7 +4,7 @@ title: Overview
 parent: Research Cluster
 nav_order: 1
 description: ""
-permalink: /researchcluster/
+permalink: /researchcluster
 ---
 
 # Overview
@@ -33,6 +33,7 @@ Once you have been granted access, you can click the button below and authentica
 
 ## Batch / Long Running Jobs
 In addition to the research-focused JupyterHub, more complex jobs can be created and run as software containers directly on the cluster.
-Our [Software Factory](/softwarefactory) is available to assist faculty and researchers with software containerization. Requests for consultation can be made by submitting a [Research Cyberinfrastructure Consultation form](https://sdsu.service-now.com/sp?id=sc_cat_item&sys_id=029639611bb825505764fd1b1e4bcb3a&sysparm_category=29ac153fdbbf4c9024094672399619e9) with the Request Type of "Software Factory Containerization" and a few sentences about the research to be conducted and the software needed.
+Our [Software Factory](/softwarefactory) is available to assist faculty and researchers with software containerization. 
+Requests for batch access to TIDE can be made by submitting the [TIDE Contact Us form](https://tide.sdsu.edu/contact/).
 
 *TIDE is supported by the Research & Cyberinfrastructure group within the IT Division. TIDE is funded by [NSF Award #2346701](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2346701)*
