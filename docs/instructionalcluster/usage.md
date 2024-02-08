@@ -15,10 +15,10 @@ permalink: /instructionalcluster/usage
 | Course | Class | Use | Semester | Instructor |
 |:-------|:------|:----|:---------|:-----------|
 | ASTR 201 Astronomy for Science Majors | 9767 |  | Spring 2024 | Rosen |
-| ASTR 350 Astronomical Techniques | 9003 |  | Spring 2024 | Quimby |
+| ASTR 350 Astronomical Techniques | 9003 | Students work in Linux and use the NumPy, SciPy, and Astropy packages in Python to process and analyze astronomical data. | Spring 2024 | Quimby |
 | BDA 572 Python Scripting | 8933 |  | Spring 2024 | Gawron |
-| BDA 600 Big Data Capstone Seminar | 8932 |  | Spring 2024 | Fernandez |
-| COMPE 361 Advanced Programming | 7484 |  | Spring 2024 | Paolini |
+| BDA 600 Big Data Capstone Seminar | 8932 | Students are equipped with the skills to leverage VERNE for their capstone projects, focusing on building deep learning models for tasks such as traffic sign recognition. They engage with Tensorflow to explore advanced techniques, enhancing their proficiency in utilizing VERNE's capabilities effectively. | Spring 2024 | Fernandez/Tsou |
+| COMPE 361 Advanced Programming | 7484 | Students use Stack SciPy to model and solve EE problems using Matplotlib, Numpy, and HDF5. Problems include solving linear equations, interpolation, fast Fourier transforms, ODEs in circuit analysis, among many other uses. | Spring 2024 | Paolini |
 | CS 581 Computational Linguistics | 9423 |  | Spring 2024 | Malouf |
 | GEOG 580 Data Management for GIS | 8639 |  | Spring 2024 | Nara |
 | LING 572 Python Scripting | 7306 |  | Spring 2024 | Gawron |
