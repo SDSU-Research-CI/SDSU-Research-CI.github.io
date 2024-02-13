@@ -29,7 +29,7 @@ SDSU hosts 27 Dell PowerEdge servers supporting TIDE.
 
 ## Storage
 
-Each user of TIDE is provided up to XXX GB of storage space accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes. It is recommended that persistent storage should be mantained elsewhere, ideally on the cloud.
+Each user of TIDE is provided up to 50 GB of storage space accessible from JupyterHub but more storage can be granted upon request. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes. It is recommended that persistent storage should be mantained elsewhere, ideally on the cloud.
 
 ## Networking
 
