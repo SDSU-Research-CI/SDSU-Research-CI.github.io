@@ -4,7 +4,7 @@ title: Overview
 parent: Research Cluster
 nav_order: 1
 description: ""
-permalink: /researchcluster
+permalink: /researchcluster/
 ---
 
 {: .note }
