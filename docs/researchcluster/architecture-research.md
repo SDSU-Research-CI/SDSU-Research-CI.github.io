@@ -13,7 +13,7 @@ This page is currently under construction. Information will be updated soon
 
 # Architecture
 
-TIDE (https://tide.sdsu.edu/), is an NSF-backed resource (award #2346701) and is part of the [National Research Platform](https://nationalresearchplatform.org/) Nautilus platform. The aware was given for SDSU to invest in hardware to support instructional use-cases and hosts the hardware in its campus data center. It is a distributed Kubernetes-based compute environment supporting CPU and GPU workloads. The resources are available to researchers to use for free for both funded and unfunded researcher projects. SDSU is given priority before being available for other users of Nautilus. 
+[TIDE](https://tide.sdsu.edu/), is an NSF-backed resource (award #2346701) and is part of the [National Research Platform](https://nationalresearchplatform.org/) Nautilus platform. The aware was given for SDSU to invest in hardware to support instructional use-cases and hosts the hardware in its campus data center. It is a distributed Kubernetes-based compute environment supporting CPU and GPU workloads. The resources are available to researchers to use for free for both funded and unfunded researcher projects. SDSU is given priority before being available for other users of Nautilus. 
 
 ## Compute
 
