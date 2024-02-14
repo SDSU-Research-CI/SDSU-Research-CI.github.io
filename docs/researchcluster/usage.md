@@ -16,7 +16,7 @@ This page is currently under construction. Information will be updated soon.
 
 | Project Name | Researcher | Use |
 |:-------------|:-----------|:----|
-| TBA | Tingting Tang | Research involves solving parametric SDPs in a compact domain and finding the maximum analytical perturbation set within this domain using tools from PDEs and numerical algebraic geometry. Massive computations are performed using MATLAB and Bertini to demonstrate this method with even low dimensional examples such as 1-D, 2-D and 3-D parametric SDPs. |
+| On parameterized SDP using PDEs and numerical algebraic geometry | Tingting Tang | Research involves solving parametric SDPs in a compact domain and finding the maximum analytical perturbation set within this domain using tools from PDEs and numerical algebraic geometry. Massive computations are performed using MATLAB and Bertini to demonstrate this method with even low dimensional examples such as 1-D, 2-D and 3-D parametric SDPs. |
 | TBA | Atsushi Nara | TBA |
 | TBA | Uduak George | TBA |
 
