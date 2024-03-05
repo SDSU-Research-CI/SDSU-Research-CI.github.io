@@ -21,8 +21,8 @@ permalink: /instructionalcluster/usage
 | COMPE 361 Advanced Programming | 7484 | Students use Stack SciPy to model and solve EE problems using Matplotlib, Numpy, and HDF5. Problems include solving linear equations, interpolation, fast Fourier transforms, ODEs in circuit analysis, among many other uses. | Spring 2024 | Paolini |
 | GEOG 580 Data Management for GIS | 8639 | Students use a PostgreSQL database adapter for Python (e.g., [psycopg2](https://www.psycopg.org/docs/){:target="_blank"}) to build, maintain, and query spatial databases for geospatial data analysis via Python scripts. | Spring 2024 | Nara |
 | LING 572 Python Scripting | 7306 |  | Spring 2024 | Gawron |
-| LING 581 Computational Linguistics | 7847 |  | Spring 2024 | Malouf |
-| LING 583 Statistical Methods in Text Analysis | 8005 |  | Spring 2024 | Malouf |
+| LING 581 Computational Linguistics | 7847 | Students use the VERNE cluster to explore linguistic concepts and implement algorithms that are fundamental to natural language processing and AI/ML. | Spring 2024 | Malouf |
+| LING 583 Statistical Methods in Text Analysis | 8005 | Students use tools like Tomotopy, Spacy, Scikit-learn, and PyTorch to collaboratively analyze large text collections, experiment with natural language processing algorithms, visualize results, and share insights. | Spring 2024 | Malouf |
 | MATH 596 Discrete & Algebraic Structures | 14422 |  | Spring 2024 | Kirby |
 | MATH 621 Advanced Topics in Algebra | 9000 |  | Spring 2024 | O'Sullivan |
 | MIS 760 AI/ML for Cybersecurity & Defense | 13642 |  | Spring 2024 | Xu |
