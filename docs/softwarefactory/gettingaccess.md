@@ -37,6 +37,11 @@ The National Research Platform (NRP) portal will automatically create you an acc
 1. You should now be redirected to the NRP Portal and you should see your SDSUid in the top right corner
   - Note: You may not see as many options in the top navigation, as the screenshot below is from an admin account
   - ![Signed in NRP Portal](/images/softwarefactory/gettingaccess10.png)
+1. Read and accept the Acceptable Use Policy (AUP) at the home page
+  - Note: You'll need to re-accept this policy every 12 months to maintain your access
+  - ![Nautilus Portal AUP](/images/softwarefactory/gettingaccess14.png)
+1. Verify that you've agreed to the AUP
+  - ![Nautilus Portal AUP Accepted](/images/softwarefactory/gettingaccess15.png)
 
 Congratulations! You now have an NRP account and you're one step closer to running containers.
 
