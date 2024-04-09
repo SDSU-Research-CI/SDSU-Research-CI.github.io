@@ -4,7 +4,7 @@ This repo contains the Research & Cyberinfrastructure documentation site: https:
 
 This repo is set up to edit in Visual Studio Code using the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 
-The first time the container is run on your comptuer, run the following:
+The first time the container is run on your computer, run the following:
  
 ```
 # bundle install
