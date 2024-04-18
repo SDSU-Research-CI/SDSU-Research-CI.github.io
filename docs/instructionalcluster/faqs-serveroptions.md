@@ -13,14 +13,17 @@ When starting a new notebook from the Server Options page, there are many option
 
 ![Server Options Page](/images/instructionalcluster/faq-serveroptions1.png)
 
+{: .note }
+Unless training deep neural networks, running large models (e.g. AlphaFold), data mining, or performing similar research that warrants the need for GPU accelerated computing, **do not request a GPU**.
+
 # GPUs, CPU Cores, and RAM
 Let's explain what GPUs, CPU Cores, and RAM are and how they can be useful in the context of research and instruction. 
 
-A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. Here are some contexts where requesting a GPU is advantageous:
+A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. *Requesting a GPU is often not necessary*, so research whether your use-case requires a GPU prior to launching a notebook. Here are some contexts where requesting a GPU can be appropriate:
 
-- AI/ML *(e.g. training a neural network)*
+- AI/ML *(e.g. training a deep neural network)*
 - Scientific Computing *(e.g. weather modeling)*
-- Data Science and Big Data Analytics *(e.g. linear regression)*
+- Data Science and Big Data Analytics *(e.g. data mining)*
 - Medical Imaging *(e.g. 3D reconstructions)*
 
 A **CPU core** is one of many small, yet powerful workers within a **CPU (Central Processing Unit)** designed for diverse and complex processing tasks in a sequential manner. Here are some contexts where requesting 2+ CPU cores is advantageous:
