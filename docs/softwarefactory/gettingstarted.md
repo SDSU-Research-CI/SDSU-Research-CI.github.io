@@ -138,7 +138,7 @@ Follow these steps to get a copy of the repo cloned to your kube notebook and th
       containers:
       - name: hellopod
         image: ghcr.io/sdsu-research-ci/hello-sdsu:main
-        resources:
+        resources:  # NOTE: CPU/RAM limit may not exceed 1.2x (20%) of request size
           limits:
             memory: 100Mi
             cpu: 100m
