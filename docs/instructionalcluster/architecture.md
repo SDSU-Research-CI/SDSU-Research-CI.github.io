@@ -26,8 +26,8 @@ SDSU hosts 15 Dell PowerEdge servers supporting VERNE.
 
 ## Storage
 
-Each user of VERNE is provided 50 GB of storage space accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes.
+Each user of VERNE is provided 80 GB of storage space accessible from JupyterHub. The space is provided by a [LINSTOR](https://linbit.com/linstor/) filesystem hosted on three storage nodes.
 
 ## Networking
 
-VERNE nodes make use of SDSU's [Science DMZ](https://iotlab.sdsu.edu/index.php/science-dmz/) providing 100G connectivity to [CENIC's](https://cenic.org/network/operations/maps) HPR network and 10G connectivity to its DC network.
+VERNE nodes make use of SDSU's IT Division's Science DMZ providing 2x10G connectivity to [CENIC's](https://cenic.org/network/operations/maps) HPR network and 100G connectivity to its DC network.
