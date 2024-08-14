@@ -8,9 +8,11 @@ description: ""
 permalink: /instructionalcluster/faqs/spacemanagement
 ---
 
+{: .note } Cluster storage is replicated but not backed up. Please use the instructions below to ensure you have a copy of any important files downloaded to your comptuer.
+
 # Disk Space Management
 
-Each user is granted 50 GB (gigabyte) of storage space accessible in JupyterHub. This space is shared by all container images you launch, and across each course you may be using JupyterHub. You can check your [disk usage](/instructionalcluster/faqs/diskquota) to get an idea of how much free space you have available.
+Each user is granted 80 GB (gigabyte) of storage space accessible in JupyterHub. This space is shared by all container images you launch, and across each course you may be using JupyterHub. You can check your [disk usage](/instructionalcluster/faqs/diskquota) to get an idea of how much free space you have available.
 
 All files will be removed at the end of the following semester after your last active course. For access not associated with a course, the files will be removed when your SDSUid is deprovisioned.
 
