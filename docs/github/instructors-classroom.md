@@ -23,8 +23,8 @@ Once you have access to GitHub Classroom you can create your first classroom. Fo
 1. Add TAs and Admins or skip for now (chose to skip for now)
     - ![](/images/github/classroom5.png)
 1. Upload student roster
-    - At this time we do not have support for integrating to Canvas
-    - Recommend uploading my.SDSU/Canvas class roster as csv, trimming down to just the SDSUid (email)
+    - Integrate the Canvas to GitHub through [Canvas/GitHub Integration](https://sdsu-research-ci.github.io/github/instructors/github-canvas-integration)
+    - Alternatively you can also upload my.SDSU/Canvas class roster as csv, trimming down to just the SDSUid (email)
     - ![](/images/github/classroom6.png)
 1. Welcome to your new GitHub Classroom!
     - ![](/images/github/classroom7.png)
