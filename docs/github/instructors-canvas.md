@@ -9,7 +9,7 @@ permalink: /github/instructors/github-canvas-integration
 ---
 
 # The Canvas and GitHub LTI integration
-Once you have access to GitHub Classroom you can create your first classroom. Follow these steps to integrate Canvas and GitHub:
+GitHub Classroom can sync a Canvas roster to a chosen classroom. Follow these steps to integrate Canvas and GitHub:
 
 1. Sign into [https://classroom.github.com/](https://classroom.github.com/) and select a classroom
 1. Go to the settings tab
@@ -21,7 +21,7 @@ Once you have access to GitHub Classroom you can create your first classroom. Fo
 1. Type in [https://sdsu.instructure.com/](https://sdsu.instructure.com/) and click the "Check" button
     - ![](/images/github/canvas-integration-4.png)
 1. Click the "Skip for now" link
-1. Sign into [canvas.sdsu.edu/](https://sdsu.instructure.com/)
+1. Sign into [canvas.sdsu.edu](canvas.sdsu.edu)
 1. Navigate to the Canvas course which you would like to sync
 1.  Click on Settings
 1. On the right side, click "GitHub Classroom"
@@ -37,6 +37,6 @@ Once you have access to GitHub Classroom you can create your first classroom. Fo
 
 
 ## Next Steps
-Any unlinked users will be show to you. Those students should [create](https://sdsu-research-ci.github.io/github/students/creating-account) a GitHub account and/or [link their SDSUid](https://sdsu-research-ci.github.io/github/students/creating-account#linking-your-sdsuid) to a Github account.
+Any unlinked users will be shown to you. Those students should [create](https://sdsu-research-ci.github.io/github/students/creating-account) a GitHub account and/or [link their SDSUid](https://sdsu-research-ci.github.io/github/students/creating-account#linking-your-sdsuid) to a Github account.
 
-You cab then sync your roster up to the Schedule Adjustment Deadline with the "Sync from Canvas" button.
+You can then sync your roster up to the Schedule Adjustment Deadline with the "Sync from Canvas" button.
