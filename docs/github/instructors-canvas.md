@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Github and Canvas Integration
+title: GitHub and Canvas Integration
 parent: Instructor Resources
 grand_parent: GitHub Education
 nav_order: 4
@@ -8,7 +8,7 @@ description: ""
 permalink: /github/instructors/github-canvas-integration
 ---
 
-# The Canvas and GitHub LTI integration
+# The Canvas and GitHub LTI Integration
 GitHub Classroom can sync a Canvas roster to a chosen classroom. Follow these steps to integrate Canvas and GitHub:
 
 1. Sign into [https://classroom.github.com/](https://classroom.github.com/) and select a classroom
