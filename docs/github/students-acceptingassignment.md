@@ -20,6 +20,12 @@ This documentation assumes that you have created a [GitHub account](/github/stud
 1. If this is your first time using GitHub Classroom, you may be prompted to authorize GitHub Classroom
     - ![](/images/github/accepting-assignment-2.png)
     - Click the 'Authorize GitHub Classroom' button
+1. If this is your first time accepting an assignment for a classroom, you may be prompted to associate your GitHub account to your SDSUid:
+    - ![](/images/github/accepting-assignment-join.png)
+    - Carefully select your SDSUid, if you click the wrong account please notify your professor so they can unlink the account
+1. You should then be able to accept the assignment:
+    - ![](/images/github/accepting-assignment-accept.png)
+    - Click the "Accept this assignment" button
 1. You should then see this page or something similar:
     - ![](/images/github/accepting-assignment-3.png)
 1. Click the link 'https://github.com/sandiegostate/sample-assignment-[your-github-username]' to view the repository
