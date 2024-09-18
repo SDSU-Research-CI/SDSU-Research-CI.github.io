@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Frequently Asked Questions
+title: Frequently Asked Questions1
 parent: GITHUB
 nav_order: 6
 has_children: true

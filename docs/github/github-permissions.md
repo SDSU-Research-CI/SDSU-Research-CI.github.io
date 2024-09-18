@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Managing GitHub membership permissions
+title: Managing GitHub's membership permissions
 parent: Frequently Asked Questions
 grand_parent: GITHUB
 nav_order: 2
@@ -8,7 +8,7 @@ description: ""
 permalink: /instructionalcluster/faqs/github-permissions
 ---
 
-# Managing GitHub membership permissions
+# Managing GitHub's membership permissions
 
 It is generally advisable to avoid changing Github's default permissions.
 
