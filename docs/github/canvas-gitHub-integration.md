@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Canvas LTI Integration to link student GitHub Accounts to GitHub ClassRoom 
+title: Linking student GitHub accounts
 parent: Frequently Asked Questions
-grand_parent: GITHUB
+grand_parent: GitHub Education
 nav_order: 1
 description: ""
-permalink: /instructionalcluster/faqs/canvas-github-integration
+permalink: /github/faqs/canvas-gitHub-integration
 ---
 
-# Canvas LTI Integration to link student GitHub Accounts to GitHub ClassRoom
+#  Linking student GitHub accounts
 
 Once a GitHub Classroom is synced with Canvas, an instructor may not manually add a student to the Classroom roster.
 

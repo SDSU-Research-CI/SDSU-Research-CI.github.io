@@ -2,10 +2,10 @@
 layout: default
 title: Auto-grading feature and CI/CD pipeline times
 parent: Frequently Asked Questions
-grand_parent: GITHUB
-nav_order: 1
+grand_parent: GitHub Education
+nav_order: 3
 description: ""
-permalink: /instructionalcluster/faqs/auto-grading-feature
+permalink: /github/faqs/auto-grading-feature
 ---
 
 # Auto-grading feature and CI/CD pipeline times
