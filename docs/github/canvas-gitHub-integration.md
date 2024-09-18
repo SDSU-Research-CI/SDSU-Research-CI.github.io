@@ -12,4 +12,4 @@ permalink: /github/faqs/canvas-gitHub-integration
 
 Once a GitHub Classroom is synced with Canvas, an instructor may not manually add a student to the Classroom roster.
 
-Due to the Canvas LTI integration managing the classroom roster, you are not able to link student GitHub accounts if they are not present on the Canvas roster. Students can still be sent an assignment link and can submit them, however, they will show up as an unlinked account.
+Due to the Canvas LTI integration managing the classroom roster, you are not able to link student GitHub accounts if they are not on the Canvas roster. Students can still be sent an assignment link and can submit them, however, they will show up as an unlinked account.
