@@ -12,30 +12,67 @@ permalink: /instructionalcluster/usage
 
 ## Active Classes
 
-| Course | Class | Use | Semester | Instructor |
-|:-------|:------|:----|:---------|:-----------|
-| ASTR 201 Astronomy for Science Majors | 9767 |  | Spring 2024 | Rosen |
-| ASTR 350 Astronomical Techniques | 9003 | Students work in Linux and use the NumPy, SciPy, and Astropy packages in Python to process and analyze astronomical data. | Spring 2024 | Quimby |
-| BDA 572 Python Scripting | 8933 |  | Spring 2024 | Gawron |
-| BDA 600 Big Data Capstone Seminar | 8932 | Students are equipped with the skills to leverage VERNE for their capstone projects, focusing on building deep learning models for tasks such as traffic sign recognition. They engage with Tensorflow to explore advanced techniques, enhancing their proficiency in utilizing VERNE's capabilities effectively. | Spring 2024 | Fernandez/Tsou |
-| COMPE 361 Advanced Programming | 7484 | Students use Stack SciPy to model and solve EE problems using Matplotlib, Numpy, and HDF5. Problems include solving linear equations, interpolation, fast Fourier transforms, ODEs in circuit analysis, among many other uses. | Spring 2024 | Paolini |
-| GEOG 580 Data Management for GIS | 8639 | Students use a PostgreSQL database adapter for Python (e.g., [psycopg2](https://www.psycopg.org/docs/){:target="_blank"}) to build, maintain, and query spatial databases for geospatial data analysis via Python scripts. | Spring 2024 | Nara |
-| LING 572 Python Scripting | 7306 |  | Spring 2024 | Gawron |
-| LING 581 Computational Linguistics | 7847 | Students use the VERNE cluster to explore linguistic concepts and implement algorithms that are fundamental to natural language processing and AI/ML. | Spring 2024 | Malouf |
-| LING 583 Statistical Methods in Text Analysis | 8005 | Students use tools like Tomotopy, Spacy, Scikit-learn, and PyTorch to collaboratively analyze large text collections, experiment with natural language processing algorithms, visualize results, and share insights. | Spring 2024 | Malouf |
-| MATH 596 Discrete & Algebraic Structures | 14422 |  | Spring 2024 | Kirby |
-| MATH 621 Advanced Topics in Algebra | 9000 |  | Spring 2024 | O'Sullivan |
-| MIS 760 AI/ML for Cybersecurity & Defense | 13642 |  | Spring 2024 | Xu |
+| Courses                                                             | Semester    | Instructors | Students |
+|:--------------------------------------------------------------------|:------------|:------------|---------:|
+| COMP 536 Computational Modeling for Scientists                      | Spring 2025 | Rosen       | 16       |
+| COMP 605 Scientific Computing                                       | Spring 2025 | Barra       | 16       |
+| LING 572 Python Scripting                                           | Spring 2025 | Gawron      | 28       |
+| LING 581 Computational Linguistics                                  | Spring 2025 | Malouf      | 8        |
+| LING 583 Statistical Methods in Text Analysis                       | Spring 2025 | Kalmar      | 19       |
+| BDA 600 Big Data Capstone Seminar                                   | Spring 2025 | Fernandez   | 29       |
+| BDA 572 Python Scripting                                            | Spring 2025 | Gawron      | 18       |
+| ASTR 350 Astronomical Techniques                                    | Spring 2025 | Quimby      | 12       |
+| CS 549 Machine Learning                                             | Spring 2025 | Zhang       | 75       |
+| CS 581 Computational Linguistics                                    | Spring 2025 | Malouf      | 44       |
+| MIS 429 Artificial Intelligence                                     | Spring 2025 | Elkins      | 38       |
+| CS 696 Applied Large Language Models                                | Spring 2025 | Whitney     | 14       |
+| CS 559 Computer Vision                                              | Spring 2025 | Sekeh       | 59       |
+| P H 671 Molecular Diagnostics, Epidemiology, and Bioinformatics     | Spring 2025 | Valafar     | 14       |
+| M E 696 Integrated Computational Materials Engineering              | Spring 2025 | Adibi       | 8        |
 
 ## Previous Classes
 
-| Course | Class | Use | Semester | Instructor |
-|:-------|:------|:----|:---------|:-----------|
-| COMPE 160 Introduction to Computer Programming | 2085 |  | Fall 2023 | Paolini |
-| ASTR 680 Astronomical Techniques | 6297 | Students work in Linux and use the NumPy, SciPy, and Astropy packages in Python to process and analyze astronomical data. | Fall 2023 | Quimby |
-| GEOG 582 GIS Programming With Python | 8357 | Students use Python geospatial libraries such as Gdal, Rasterio, GeoPandas, and PySAL to develop tools to automate geospatial data processing and analysis. | Fall 2023 | Nara |
-| MATH 340 Mathematical Programming | 10879 | Students use [**Stack SciPy**](/instructionalcluster/images) to gain experience of using Python to do the following, (i) Learn the 'science' of computer programming. (ii) Learn the 'art' of computer programming. (iii) Represent abstract mathematics as computer code and translate computer code into mathematics. (iv) Visualize and describe data. (v) Learn in what ways modern computing is done. | Fall 2023 | Tang |
-| MATH 522 Number Theory | 10424 |  | Fall 2023 | Kirby |
-| P H 700A Principle Program Data Structures in Public Health | 3088 |  | Fall 2023 | Valafar |
-| COMPE 361 Advanced Programming   | 10991 | Utilizing the [**Stack SciPy**](/instructionalcluster/images) container image on VERNE, students solve EE problems using Matplotlib, NumPy, HDF5, and the IEEE 754 Standard. Additionally, students solve linear equations, perform regression, interpolation, eigendecomposition, numerical quadrature, fast Fourier transforms, and solve ODEs within the container. | Spring 2023 | Paolini |
-| ASTR 350 Astronomical Techniques | 13057 | Students use VERNE to gain firsthand experience working with astronomical data in a Linux environment. They write Python code using NumPy, SciPy, and Astropy to process CCD images, measure the positions and brightness of stars, and to analyze these data to derive distances, ages, and Galactic extinction. | Spring 2023 | Quimby |
+| Courses                                                             | Semester    | Instructors | Students |
+|:--------------------------------------------------------------------|:------------|:------------|---------:|
+| COMP 521 Computational Science                                      | Fall 2024   | Rosen       | 6        |
+| COMP 526 Computational Methods for Scientists                       | Fall 2024   | Barra       | 12       |
+| LING 571 Computational Corpus Linguistics                           | Fall 2024   | Malouf      | 29       |
+| ASTR 450 Extragalactic Astronomy                                    | Fall 2024   | Rubin       | 12       |
+| ASTR 680 Astronomical Techniques                                    | Fall 2024   | Quimby      | 7        |
+| GEOG 582 Geographic Information Systems Programming with Python     | Fall 2024   | Nara        | 20       |
+| MIS 720 Electronic Business and Big Data Information                | Fall 2024   | Elkins      | 31       |
+| MATH 522 Number Theory                                              | Fall 2024   | Kirby       | 25       |
+| MATH 620 Groups, Rings, and Fields                                  | Fall 2024   | O'Sullivan  | 7        |
+| PSY 569 Foundations of Neuroimaging                                 | Fall 2024   | Solders     | 28       |
+| GEOG 780 Seminar in Geocomputation                                  | Fall 2024   | Nara        | 15       |
+| P H 610 Programming and Data Structures for Public Health           | Fall 2024   | Valafar     | 14       |
+| CS 696 Reinforcement Learning                                       | Fall 2024   | Zhang       | 16       |
+| CS 561 Deep Learning for Natural Language Processing                | Fall 2024   | Pishgar     | 36       |
+| BDA 600 Big Data Capstone Seminar                                   | Fall 2024   | Fernandez   | 12       |
+| MIS 515 Object-Oriented Programming for Business Applications       | Fall 2024   | Goldberg    | 43       |
+| MATH 596 Mathematical Data Science                                  | Fall 2024   | Curtis      | 9        |
+| ASTR 201 Astronomy for Science Majors                               | Spring 2024 | Rosen       | 23       |
+| ASTR 350 Astronomical Techniques                                    | Spring 2024 | Quimby      | 19       |
+| BDA 572 Python Scripting                                            | Spring 2024 | Gawron      | 21       |
+| BDA 600 Big Data Capstone Seminar                                   | Spring 2024 | Fernandez   | 44       |
+| COMPE 361 Advanced Programming                                      | Spring 2024 | Paolini     | 27       |
+| CS 581 Computational Linguistics                                    | Spring 2024 | Malouf      | 32       |
+| GEOG 580 Data Management for Geographic Information Systems         | Spring 2024 | Nara        | 12       |
+| LING 572 Python Scripting                                           | Spring 2024 | Gawron      | 31       |
+| LING 581 Computational Linguistics                                  | Spring 2024 | Malouf      | 7        |
+| LING 583 Statistical Methods in Text Analysis                       | Spring 2024 | Malouf      | 15       |
+| MATH 596 Discrete and Algebraic Structures                          | Spring 2024 | Kirby       | 9        |
+| MATH 621 Advanced Topics in Algebra                                 | Spring 2024 | O'Sullivan  | 6        |
+| MIS 760 AI for Cybersecurity                                        | Spring 2024 | Xu          | 7        |
+| MIS 429 Artificial Intelligence                                     | Spring 2024 | Elkins      | 38       |
+| COMPE 160 Introduction to Computer Programming                      | Fall 2023   | Paolini     | 148      |
+| P H 700A Principles of Programming Data Structures in Public Health | Fall 2023   | Valafar     | 7        |
+| ASTR 680 Astronomical Techniques                                    | Fall 2023   | Quimby      | 8        |
+| GEOG 383 Geographic Information Systems Scripting Fundamentals      | Fall 2023   | Nara        | 15       |
+| GEOG 582 Geographic Information Systems Programming With Python     | Fall 2023   | Nara        | 16       |
+| MATH 522 Number Theory                                              | Fall 2023   | Kirby       | 27       |
+| MATH 340 Programming in Mathematics                                 | Fall 2023   | Tang        | 7        |
+| MATH 620 Groups, Rings, and Fields                                  | Fall 2023   | O'Sullivan  | 14       |
+| ENGR 897 Doctoral Research                                          | Spring 2023 | Davani      | 1        |
+| COMPE 361 Windows Programming                                       | Spring 2023 | Paolini     | 41       |
+| ASTR 350 Astronomical Techniques                                    | Spring 2023 | Quimby      | 14       |
