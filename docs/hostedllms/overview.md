@@ -39,11 +39,21 @@ Please request access by completing the following steps:
     - The "Please provide a description of your request" field should include "Hosted LLM access" and the following information:
         - Instructional use: The my.SDSU catalog course number and class number
         - Research use: List of SDSUids of lab members
-1. Sign into [our Open WebUI instance](https://sdsu-rci-owui.nrp-nautilus.io/) with your SDSUid
-    - *Note*: You must search for "San Diego State University", please do not use ORCID
-    - *Note*: If you did use another authentication option, please use CILogon's [log out page](https://cilogon.org/logout/)
-1. Wait for confirmation of access, usually 1-2 business days
-1. Once granted access, direct students or lab members to sign into Open WebUI with their SDSUid
+1. Wait for confirmation of access via the ServiceNow ticket, this usually takes 1-2 business days
+1. Once granted access, direct students or lab members to sign into Open WebUI with their SDSUid credentials
+
+### Accessing Open WebUI
+
+1. Sign into [our Open WebUI instance](https://sdsu-rci-owui.nrp-nautilus.io/) with your SDSUid by clicking the "Continue with SSO" button
+    - ![Open WebUI sign in page](/images/hostedllms/requesting-access-1.png)
+1. Search for "San Diego State University" and click "Log On"
+    - ![CILogon sign in page](/images/hostedllms/requesting-access-2.png)
+    - *Note*: If you did use another authentication option, please use CILogon's [log out page](https://cilogon.org/logout/) and repeat the previous step
+1. Authenticate with your SDSUid credentials and approve DUO as you normally would
+    - ![Shiboleth sign in page](/images/hostedllms/requesting-access-3.png)
+1. If this is your first time signing in, then you may be greeted by a welcome message
+    - ![Open WebUI welcome pop up](/images/hostedllms/requesting-access-4.png)
+1. You should now have access to the chat interface
 
 ## Web-based Chat
 
