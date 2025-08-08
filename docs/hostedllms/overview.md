@@ -104,17 +104,17 @@ Please follow these steps to configure the OpenAI Python API library to work wit
     ```
     - *Note*: Replace the value `sk-xxxxxxxxxxxxxxxxxxx` with your API key
 1. Configure a client to work with Open WebUI
-    ```python
-    import os
-    import openai
+```python
+import os
+import openai
 
-    API_KEY = os.environ.get("OPENAI_API_KEY_OWUI")
+API_KEY = os.environ.get("OPENAI_API_KEY_OWUI")
 
-    client = openai.OpenAI(
-        base_url = "https://sdsu-rci-owui.nrp-nautilus.io/api/",
-        api_key = API_KEY
-    )
-    ```
+client = openai.OpenAI(
+    base_url = "https://sdsu-rci-owui.nrp-nautilus.io/api/",
+    api_key = API_KEY
+)
+```
 
 #### Models Endpoint
 
