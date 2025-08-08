@@ -150,4 +150,7 @@ These rate limits apply to both web-based chat and API usage.
 
 | Requests per Minute | Requests per Hour | Sliding Window Limit | Sliding Window |
 |:-------------------:|:-----------------:|:--------------------:|:--------------:|
-| 100 | 1000 | 200 | 15 |
+| 100 | 1000 | 250 | 15 |
+
+{: .note }
+These rate limits are subject to change to address real-time load.
