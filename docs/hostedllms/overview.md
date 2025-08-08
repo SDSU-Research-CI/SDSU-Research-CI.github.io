@@ -22,10 +22,10 @@ This service is not intended to replace [university recommended AI tools](https:
 
 | Model | Parameters | Context Length | Input | Output | 
 |:------|:----------:|:--------------:|:------|:-------|
-| DeepSeek-R1-Distill-Llama-70B | 70b | 128K | Text | Text |
-| gpt-oss | 120b | 128K | Text | Text |
-| Llama 3.1 | 70b | 128K | Text | Text |
-| Llama 4 | 109b | 10M | Text, Image | Text |
+| DeepSeek-R1-Distill-Llama-70B | 70b | 4K | Text | Text |
+| gpt-oss | 120b | 8K | Text | Text |
+| Llama 3.1 | 70b | 4K | Text | Text |
+| Llama 4 | 109b | 4K | Text, Image | Text |
 
 ## Requesting Access
 
