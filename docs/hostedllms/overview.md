@@ -20,12 +20,12 @@ This service is not intended to replace [university recommended AI tools](https:
 
 ## Current Models
 
-| Model | Parameters | Context Length | Input | Output | 
-|:------|:----------:|:--------------:|:------|:-------|
-| DeepSeek-R1-Distill-Llama-70B | 70b | 128K | Text | Text |
-| gpt-oss | 120b | 128K | Text | Text |
-| Llama 3.1 | 70b | 128K | Text | Text |
-| Llama 4 | 109b | 10M | Text, Image | Text |
+| Model | Parameters | Model ID | Context Length | Input | Output |
+|:------|:----------:|:--------:|:--------------:|:------|:-------|
+| DeepSeek-R1-Distill-Llama-70B | 70B | deepseek-r1:70b | 4K | Text | Text |
+| gpt-oss | 120B | gpt-oss:120b | 8K | Text | Text |
+| Llama 3.1 | 70B | llama3.1:70b | 4K | Text | Text |
+| Llama 4 | 109B | llama4:16x17b | 4K | Text, Image | Text |
 
 ## Requesting Access
 
@@ -79,7 +79,11 @@ Once you have been granted access, you can follow these steps to obtain an API k
        - *Note*: Do not use the JWT token as this expires periodically
 1. Click the clipboard/copy icon to copy your new API key
     - ![API key created and ready to copy](/images/hostedllms/api-access-4.png)
-    - If you should need to rotate your API key, please follow the above directions and then click the circle/refresh icon and then click the clipboard/copy icon to copy the new key
+
+{: .note }
+Never commit your API key to version control or otherwise share your API key, but rather treat it as you would a password. Use environment variables or a secret‑management tool when using your API key with code.
+
+If you should need to rotate your API key, please follow the above directions and then click the circle/refresh icon in the last step to generate a new API key.
 
 ### Sample Code
 
@@ -87,34 +91,40 @@ Once you have your API key, you can use the OpenAI API-compatible models and cha
 
 In the following sections we provide sample code using the [OpenAI Python API library](https://pypi.org/project/openai/).
 The following examples should work on the instructional and research JupyterHub instances using the LLM Notebook.
-Other methods of interacting with REST APIs, such as Postman and curl, should still apply.
+
+Other methods of interacting with REST APIs, such as HTTP requests, Postman and curl, should still apply using the information below:
+
+- Base URL = `https://sdsu-rci-owui.nrp-nautilus.io/api`
+- Models Endpoint = `/models`
+- Chat Completions Endpoint = `/chat/completions`
 
 #### OpenAI Python API Configuration
 
 Please follow these steps to configure the OpenAI Python API library to work with our instance of  Open WebUI:
-
-1. Create an environment variable `OPENAI_API_KEY_OWUI` for your Open WebUI API key
-    - MacOS/Linux
-    ```bash
-    export OPENAI_API_KEY_OWUI=sk-xxxxxxxxxxxxxxxxxxx
-    ```
-    - Windows PowerShell
-    ```powershell
-    $env:OPENAI_API_KEY_OWUI = "sk-xxxxxxxxxxxxxxxxxxx"
-    ```
-    - *Note*: Replace the value `sk-xxxxxxxxxxxxxxxxxxx` with your API key
+1. (Optional) If you are not using the LLM Notebook on one of our JupyterHub instances:
+    - Install the [OpenAI Python API](https://pypi.org/project/openai/) 
+        - `pip install openai`
+    - Install [python-dotenv](https://pypi.org/project/python-dotenv/)
+        - `pip install python-dotenv`
+1. Create an `env` file
+    - *Note*: If using source control, make sure not to track this `env` file
+1. Edit the `env` file and enter `OPENAI_API_KEY_OWUI=sk-xxxxxxxxxxxxxxxxxxx` and save the `env` file
+    - *Note*: Replace `sk-xxxxxxxxxxxxxxxxxxx` with your API key
 1. Configure a client to work with Open WebUI
-    ```python
-    import os
-    import openai
 
-    API_KEY = os.environ.get("OPENAI_API_KEY_OWUI")
+```python
+from dotenv import load_dotenv
+import openai
 
-    client = openai.OpenAI(
-        base_url = "https://sdsu-rci-owui.nrp-nautilus.io/api/",
-        api_key = API_KEY
-    )
-    ```
+load_dotenv("env")
+
+API_KEY = os.environ.get("OPENAI_API_KEY_OWUI")
+
+client = openai.OpenAI(
+    base_url = "https://sdsu-rci-owui.nrp-nautilus.io/api/",
+    api_key = API_KEY
+)
+```
 
 #### Models Endpoint
 
@@ -125,6 +135,15 @@ models = client.models.list()
 
 for model in models.data:
     print(model.id)
+```
+
+Sample output:
+
+```text
+llama4:16x17b
+gpt-oss:120b
+deepseek-r1:70b
+llama3.1:70b
 ```
 
 #### Chat Completions Endpoint
@@ -143,6 +162,12 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
+Sample ouput:
+
+```text
+Hello! How can I assist you today?
+```
+
 ## Rate Limiting
 
 To ensure availability of these resources, we have enabled rate limiting for all users.
@@ -150,4 +175,7 @@ These rate limits apply to both web-based chat and API usage.
 
 | Requests per Minute | Requests per Hour | Sliding Window Limit | Sliding Window |
 |:-------------------:|:-----------------:|:--------------------:|:--------------:|
-| 100 | 1000 | 200 | 15 |
+| 100 | 1000 | 250 | 15 |
+
+{: .note }
+These rate limits are subject to change to address real-time load.
