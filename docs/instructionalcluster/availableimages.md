@@ -67,6 +67,7 @@ The following custom containers are available for use.
 | Astro Notebook              | [astro-notebook](https://github.com/SDSU-Research-CI/astro-notebook) | ghcr.io/sdsu-research-ci/astro-notebook:v2.0 | Everything in jupyter/scipy-notebook <br/><br/> astropy, astroquery, photutils, emcee, corner, fsps, lxml, reportlab <br/><br/> SKIRT <br/><br/> PTS |
 | LLM Notebook                | [llm-notebook](https://github.com/SDSU-Research-CI/LLM-Notebook) | ghcr.io/sdsu-research-ci/llm-notebook:v3.0 | Everything in jupyter/pytorch-notebook <br/><br/> rclone, bitsandbytes, transformers, peft, accelerate, trl, ollama-python, openai, PyAudio, portaudio, cuda-nvcc, deepspeed, langchain, huggingface_hub, auto-gpt, autoawq, xformers, dask-kubernetes, chromadb <br/><br/> FastChat <br/><br/> Ollama <br/><br/> Code Server (VS Code)  <br/><br/> Jupyter AI|
 | Molecular Dynamics Notebook                | [md-notebook](https://github.com/SDSU-Research-CI/md-notebook) | ghcr.io/sdsu-research-ci/md-notebook:v3.0 | Everything in jupyter/scipy-notebook <br/><br/>  cmake<br/><br/> gcc<br/><br/> g++<br/><br/> openmpi-bin<br/><br/> vim<br/><br/> LAMMPS<br/><br/> ovito<br/><br/> Quantum Espresso<br/><br/> Jupyter Desktop |
+| Reinforcement Learning Notebook                | [rl-notebook](https://github.com/SDSU-Research-CI/rl-notebook) | ghcr.io/sdsu-research-ci/rl-notebook:v1.0 | Everything in jupyter/pytorch-notebook <br/><br/> rclone  <br/><br/> kubectl  <br/><br/> Jupyter Desktop  <br/><br/> Desktop VS Code <br/><br/> Code Server (VS Code) <br/><br/> Globus Connect Personal <br/><br/> NB Conda Kernels <br/><br/> Gymnasium |
 
 The following diagram shows the relationships between the general and custom container images.
 
@@ -85,6 +86,7 @@ graph LR;
     K[md-notebook]
     L[r-notebook]
     M[rstudio-notebook]
+    N[rl-notebook]
 
     A-->B
     A-->D
@@ -98,4 +100,5 @@ graph LR;
     C-->J
     A-->L
     L-->M
+    C-->N
 ```
